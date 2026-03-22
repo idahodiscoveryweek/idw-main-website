@@ -9,15 +9,15 @@ export default function Header() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-100">
-      <div className="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
-        <Link href="/" className="flex items-center gap-6">
+      <div className="flex justify-between items-center w-full px-3 sm:px-6 py-2 sm:py-4 max-w-7xl mx-auto">
+        <Link href="/" className="flex items-center gap-2 sm:gap-6">
           <img
             alt="Idaho Discovery Week Logo"
-            className="w-auto h-28 transition-all duration-300 hover:scale-105"
+            className="w-auto h-12 sm:h-28 transition-all duration-300 hover:scale-105"
             src="/idwnewlogo.png"
           />
           <div className="flex flex-col">
-            <span className="text-4xl font-black text-[#437eb9] font-blocky tracking-tight leading-none uppercase">
+            <span className="text-base sm:text-4xl font-black text-[#437eb9] font-blocky tracking-tight leading-none uppercase">
               Idaho
               <br />
               Discovery
@@ -154,10 +154,10 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-3 rounded-xl bg-linear-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 transition-all duration-300"
+            className="md:hidden p-2.5 rounded-full bg-[#437eb9] text-white hover:bg-[#366898] transition-all duration-300 shadow-md"
           >
-            <span className="material-symbols-outlined text-2xl">
-              {mobileMenuOpen ? "close" : "menu"}
+            <span className="material-symbols-outlined text-xl">
+              {mobileMenuOpen ? "close" : "menu_open"}
             </span>
           </button>
         </div>
@@ -224,9 +224,6 @@ export default function Header() {
             >
               Contact
             </Link>
-            <button className="bg-linear-to-r from-orange-500 to-red-500 text-white px-8 py-3 rounded-full font-label font-bold text-sm tracking-wide transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-500/25 active:scale-95">
-              Register Now
-            </button>
           </div>
         </div>
       )}

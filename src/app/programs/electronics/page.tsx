@@ -7,7 +7,7 @@ export default function ElectronicsPage() {
       <Header />
       {/* Hero Section */}
       <section
-        className="pt-56 pb-20 relative"
+        className="pt-28 sm:pt-56 pb-12 sm:pb-20 relative"
         style={{
           backgroundImage: "url(/cloud_background.jpg)",
           backgroundSize: "cover",
@@ -15,17 +15,17 @@ export default function ElectronicsPage() {
         }}
       >
         <div className="absolute inset-0 bg-linear-to-b from-black/90 via-black/75 to-black/50"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="material-symbols-outlined text-white text-5xl">
+            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <span className="material-symbols-outlined text-white text-3xl sm:text-5xl">
                 bolt
               </span>
-              <h1 className="font-headline text-5xl md:text-6xl font-black text-white">
+              <h1 className="font-headline text-2xl sm:text-5xl md:text-6xl font-black text-white">
                 Electronics & Circuitry
               </h1>
             </div>
-            <p className="text-xl text-white/90 max-w-3xl">
+            <p className="text-sm sm:text-xl text-white/90 max-w-3xl">
               Dive into the exciting world of electronics! Build circuits, work
               with microcontrollers, and bring your ideas to life through
               hands-on projects.
@@ -39,6 +39,14 @@ export default function ElectronicsPage() {
                   Microcontroller Game Kit Included
                 </span>
               </div>
+              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-2 rounded-full border border-white/30">
+                <span className="material-symbols-outlined text-white text-lg">
+                  thumb_up
+                </span>
+                <span className="text-white font-label font-semibold text-sm">
+                  Beginner Friendly
+                </span>
+              </div>
               <span className="inline-flex items-center bg-white/20 backdrop-blur text-white text-sm font-bold font-label px-4 py-2 rounded-full border border-white/30">
                 $189.99
               </span>
@@ -49,7 +57,7 @@ export default function ElectronicsPage() {
 
       {/* Program Details */}
       <section
-        className="py-20 relative"
+        className="py-10 sm:py-20 relative"
         style={{
           backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
           backgroundSize: "cover",
@@ -59,15 +67,15 @@ export default function ElectronicsPage() {
       >
         {/* Overlay for opacity */}
         <div className="absolute inset-0 bg-white/80"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-16 items-start">
             {/* Left Column - Description */}
             <div className="space-y-8">
-              <div className="bg-blue-100 rounded-2xl p-8 shadow-lg">
-                <h2 className="font-headline text-3xl font-bold text-gray-800 mb-6">
+              <div className="bg-blue-100 rounded-2xl p-5 sm:p-8 shadow-lg">
+                <h2 className="font-headline text-xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">
                   What You'll Learn
                 </h2>
-                <div className="space-y-4 text-gray-600 text-lg">
+                <div className="space-y-4 text-gray-600 text-sm sm:text-lg">
                   <p>
                     Embark on an exciting 5-day sci-fi adventure where you'll
                     master coding and circuitry! Through an immersive space
@@ -85,8 +93,8 @@ export default function ElectronicsPage() {
                 </div>
               </div>
 
-              <div className="bg-blue-100 rounded-2xl p-8 shadow-lg">
-                <h3 className="font-headline text-2xl font-bold text-gray-800 mb-6">
+              <div className="bg-blue-100 rounded-2xl p-5 sm:p-8 shadow-lg">
+                <h3 className="font-headline text-lg sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">
                   Key Topics
                 </h3>
                 <ul className="space-y-3">
@@ -128,8 +136,8 @@ export default function ElectronicsPage() {
 
             {/* Right Column - Projects & Instructor */}
             <div className="space-y-8">
-              <div className="bg-blue-100 rounded-2xl p-8 shadow-lg">
-                <h3 className="font-headline text-2xl font-bold text-gray-800 mb-6">
+              <div className="bg-blue-100 rounded-2xl p-5 sm:p-8 shadow-lg">
+                <h3 className="font-headline text-lg sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">
                   Hands-On Projects
                 </h3>
                 <div className="space-y-4">
@@ -179,8 +187,8 @@ export default function ElectronicsPage() {
                 </div>
               </div>
 
-              <div className="bg-blue-100 rounded-2xl p-8 shadow-lg">
-                <h3 className="font-headline text-xl font-bold text-gray-800 mb-4">
+              <div className="bg-blue-100 rounded-2xl p-5 sm:p-8 shadow-lg">
+                <h3 className="font-headline text-lg sm:text-xl font-bold text-gray-800 mb-4">
                   Meet Your Instructor
                 </h3>
                 <div className="flex items-center gap-4">
@@ -208,16 +216,16 @@ export default function ElectronicsPage() {
       </section>
 
       {/* Registration Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-10 sm:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="font-label text-blue-500 font-bold tracking-widest uppercase text-sm mb-4 block">
               Enroll Now
             </span>
-            <h2 className="font-headline text-4xl font-black text-gray-800 mb-4">
+            <h2 className="font-headline text-2xl sm:text-4xl font-black text-gray-800 mb-4">
               Choose Your Week
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-gray-600 text-sm sm:text-lg max-w-2xl mx-auto">
               Select the week that works best for your schedule. Each session
               runs Monday through Friday with the same incredible curriculum.
             </p>
@@ -239,7 +247,7 @@ export default function ElectronicsPage() {
                   <span className="material-symbols-outlined text-blue-500 text-base">
                     schedule
                   </span>
-                  10:00 AM – 12:00 PM
+                  10:00 AM – 11:50 AM
                 </p>
                 <p className="flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-blue-500 text-base">
@@ -278,7 +286,7 @@ export default function ElectronicsPage() {
                   <span className="material-symbols-outlined text-blue-500 text-base">
                     schedule
                   </span>
-                  10:00 AM – 12:00 PM
+                  10:00 AM – 11:50 AM
                 </p>
                 <p className="flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-blue-500 text-base">
@@ -317,7 +325,7 @@ export default function ElectronicsPage() {
                   <span className="material-symbols-outlined text-blue-500 text-base">
                     schedule
                   </span>
-                  10:00 AM – 12:00 PM
+                  10:00 AM – 11:50 AM
                 </p>
                 <p className="flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-blue-500 text-base">

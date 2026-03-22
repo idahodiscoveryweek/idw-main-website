@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background font-body text-on-background antialiased">
       <Header />
-      <main className="pt-20">
+      <main className="pt-14 sm:pt-20">
         {/* Hero Section */}
         <section
-          className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-40"
+          className="relative min-h-screen flex items-center justify-center overflow-hidden pt-0 sm:pt-20 pb-20 sm:pb-40"
           style={{
             backgroundImage: "url(/cloud_background.jpg)",
             backgroundSize: "cover",
@@ -20,8 +20,8 @@ export default function Home() {
         >
           {/* Dark overlay for better text contrast */}
           <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-transparent"></div>
-          <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-            <h1 className="font-headline text-6xl md:text-8xl font-extrabold text-white tracking-tighter mb-8 leading-[1.1] animate-fade-in">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
+            <h1 className="font-headline text-3xl sm:text-6xl md:text-8xl font-extrabold text-white tracking-tighter mb-6 sm:mb-8 leading-[1.1] animate-fade-in">
               Let's Create Something <br />{" "}
               <span
                 className="text-transparent bg-clip-text inline-block"
@@ -41,38 +41,38 @@ export default function Home() {
                 Amazing This Summer
               </span>
             </h1>
-            <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/90 mb-12 font-medium leading-relaxed">
+            <p className="max-w-2xl mx-auto text-sm sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-12 font-medium leading-relaxed">
               Join us for a summer of hands-on fun, creativity, and discovery.
               Perfect for curious minds who love to build, draw, and explore new
               ideas together!
             </p>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-3 sm:gap-6">
               <Link
                 href="/programs/electronics"
-                className="group flex items-center gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                className="group flex items-center gap-2 sm:gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
               >
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                   bolt
                 </span>
-                <span>Discover: Electronics & Circuitry</span>
+                <span>Discover: Electronics</span>
               </Link>
               <Link
                 href="/programs/art"
-                className="group flex items-center gap-3 bg-amber-100 text-amber-700 px-8 py-4 rounded-full font-label font-bold hover:bg-amber-200 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                className="group flex items-center gap-2 sm:gap-3 bg-amber-100 text-amber-700 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:bg-amber-200 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
               >
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                   draw
                 </span>
-                <span>Discover: Drawing From Life</span>
+                <span>Discover: Drawing</span>
               </Link>
               <Link
                 href="/programs/japanese"
-                className="group flex items-center gap-3 bg-white text-red-400 px-8 py-4 rounded-full font-label font-bold hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                className="group flex items-center gap-2 sm:gap-3 bg-white text-red-400 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
               >
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                   temple_buddhist
                 </span>
-                <span>Discover: Japanese Language & Culture</span>
+                <span>Discover: Japanese</span>
               </Link>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
 
         {/* Discovery Tracks Section */}
         <section
-          className="mx-auto px-6 py-24 relative"
+          className="mx-auto px-4 sm:px-6 py-12 sm:py-24 relative"
           style={{
             backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
             backgroundSize: "cover",
@@ -96,12 +96,12 @@ export default function Home() {
                 <span className="font-label text-blue-500 font-bold tracking-widest uppercase text-sm mb-4 block">
                   Our Tracks
                 </span>
-                <h2 className="font-headline text-4xl md:text-5xl font-black text-gray-800 tracking-tight">
+                <h2 className="font-headline text-2xl sm:text-4xl md:text-5xl font-black text-gray-800 tracking-tight">
                   Choose Your Adventure
                 </h2>
               </div>
-              <div className="bg-linear-to-r from-indigo-50 to-blue-50 border-l-4 border-blue-500 rounded-lg p-6 shadow-sm">
-                <p className="text-gray-700 font-serif text-lg italic leading-relaxed">
+              <div className="bg-linear-to-r from-indigo-50 to-blue-50 border-l-4 border-blue-500 rounded-lg p-4 sm:p-6 shadow-sm">
+                <p className="text-gray-700 font-serif text-sm sm:text-lg italic leading-relaxed">
                   All courses taught by passionate experts with real-world
                   experience. Each course runs 2 hours daily, Monday-Friday for
                   one week.
@@ -133,7 +133,7 @@ export default function Home() {
                       computer to fix your ship and return to Earth, then build
                       your own spaceship game to take home.
                     </p>
-                    <div className="flex items-center gap-6 text-sm font-label text-blue-500">
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-blue-500">
                       <span className="flex items-center gap-2">
                         <span className="material-symbols-outlined">
                           devices
@@ -149,7 +149,7 @@ export default function Home() {
                   <div className="mt-4">
                     <Link
                       href="/programs/electronics"
-                      className="mt-0 group flex items-center justify-center gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                      className="mt-0 group flex items-center justify-center gap-2 sm:gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
                     >
                       <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                         bolt
@@ -184,7 +184,7 @@ export default function Home() {
                       professional guidance. Your final project will be creating
                       a beautiful self portrait to take home.
                     </p>
-                    <div className="flex items-center gap-6 text-sm font-label text-amber-500">
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-amber-500">
                       <span className="flex items-center gap-2">
                         <span className="material-symbols-outlined">brush</span>
                         Drawing Kit Included
@@ -193,13 +193,13 @@ export default function Home() {
                         <span className="material-symbols-outlined">
                           person
                         </span>
-                        All Skill Levels
+                        Ages 8+
                       </span>
                     </div>
                   </div>
                   <Link
                     href="/programs/art"
-                    className="mt-6 group flex items-center justify-center gap-3 bg-amber-100 text-amber-700 px-8 py-4 rounded-full font-label font-bold hover:bg-amber-200 transition-all duration-300 hover:shadow-lg"
+                    className="mt-6 group flex items-center justify-center gap-2 sm:gap-3 bg-amber-100 text-amber-700 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:bg-amber-200 transition-all duration-300 hover:shadow-lg"
                   >
                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                       draw
@@ -233,7 +233,7 @@ export default function Home() {
                       in a formal Japanese meal while mastering proper eating
                       customs.
                     </p>
-                    <div className="flex items-center gap-6 text-sm font-label text-red-400">
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-red-400">
                       <span className="flex items-center gap-2">
                         <span className="material-symbols-outlined">
                           restaurant
@@ -249,7 +249,7 @@ export default function Home() {
                   <div className="mt-4">
                     <Link
                       href="/programs/japanese"
-                      className="group flex items-center justify-center gap-3 bg-white text-red-400 px-8 py-4 rounded-full font-label font-bold border-2 border-red-200 hover:border-red-300 transition-all duration-300 hover:shadow-lg"
+                      className="group flex items-center justify-center gap-2 sm:gap-3 bg-white text-red-400 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base border-2 border-red-200 hover:border-red-300 transition-all duration-300 hover:shadow-lg"
                     >
                       <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                         temple_buddhist
@@ -266,11 +266,11 @@ export default function Home() {
         {/* Mission Section */}
         <section
           id="mission"
-          className="bg-linear-to-br from-blue-50 to-indigo-50 py-32 overflow-hidden relative"
+          className="bg-linear-to-br from-blue-50 to-indigo-50 py-16 sm:py-32 overflow-hidden relative"
         >
-          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-16 items-center">
             <div className="relative order-2 lg:order-1">
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-3 sm:gap-6">
                 <div className="space-y-6">
                   <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl -rotate-2 transition-transform hover:rotate-0 duration-500">
                     <img
@@ -279,7 +279,7 @@ export default function Home() {
                       src="/IDWgrantprofile.png"
                     />
                   </div>
-                  <div className="bg-blue-500 text-white p-6 rounded-2xl shadow-lg">
+                  <div className="bg-blue-500 text-white p-3 sm:p-6 rounded-2xl shadow-lg">
                     <span className="font-label font-bold text-xs uppercase tracking-widest block mb-2">
                       Meet Grant
                     </span>
@@ -301,7 +301,7 @@ export default function Home() {
                       src="/IDWmoemaprofile.png"
                     />
                   </div>
-                  <div className="bg-emerald-500 text-white p-6 rounded-2xl shadow-lg">
+                  <div className="bg-emerald-500 text-white p-3 sm:p-6 rounded-2xl shadow-lg">
                     <span className="font-label font-bold text-xs uppercase tracking-widest block mb-2">
                       Meet Moema
                     </span>
@@ -331,10 +331,10 @@ export default function Home() {
               <span className="font-label text-indigo-600 font-bold tracking-widest uppercase text-sm mb-6 block">
                 Our Mission
               </span>
-              <h2 className="font-headline text-4xl md:text-5xl font-black text-gray-800 mb-8 leading-tight tracking-tight">
+              <h2 className="font-headline text-2xl sm:text-4xl md:text-5xl font-black text-gray-800 mb-8 leading-tight tracking-tight">
                 Why Idaho Discovery Week?
               </h2>
-              <div className="space-y-6 text-gray-600 font-medium text-lg leading-relaxed">
+              <div className="space-y-6 text-gray-600 font-medium text-sm sm:text-lg leading-relaxed">
                 <p className="transition-all duration-300 hover:text-gray-800">
                   We believe that summer should be more than just a break. It
                   should be a launchpad. As students ourselves, we wanted to
@@ -348,7 +348,7 @@ export default function Home() {
                   high-energy environment for kids in our community.
                 </p>
               </div>
-              <div className="mt-12 flex items-center gap-6">
+              <div className="mt-6 flex items-center gap-6">
                 <div className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-blue-500 text-2xl">
                     school
@@ -364,7 +364,7 @@ export default function Home() {
 
         {/* Newsletter / CTA */}
         <section
-          className="mx-auto px-6 py-24 relative"
+          className="mx-auto px-4 sm:px-6 py-12 sm:py-24 relative"
           style={{
             backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
             backgroundSize: "cover",
@@ -375,17 +375,17 @@ export default function Home() {
           {/* Overlay for opacity */}
           <div className="absolute inset-0 bg-white/60"></div>
           <div className="relative z-10 max-w-5xl mx-auto text-center">
-            <div className="bg-linear-to-r from-[#437eb9] to-[#366898] rounded-2xl p-12 md:p-20 relative overflow-hidden shadow-2xl">
+            <div className="bg-linear-to-r from-[#437eb9] to-[#366898] rounded-2xl p-6 sm:p-12 md:p-20 relative overflow-hidden shadow-2xl">
               <div
-                className="absolute top-0 right-0 p-8 opacity-60"
+                className="absolute top-0 right-0 p-4 sm:p-8 opacity-60"
                 style={{ color: "#f39608" }}
               >
-                <span className="material-symbols-outlined text-9xl animate-pulse">
+                <span className="material-symbols-outlined text-5xl sm:text-9xl animate-pulse">
                   rocket_launch
                 </span>
               </div>
               <h2
-                className="text-5xl md:text-7xl font-normal text-white mb-8 relative z-10"
+                className="text-2xl sm:text-5xl md:text-7xl font-normal text-white mb-4 sm:mb-8 relative z-10"
                 style={{
                   fontFamily: "'Indie Flower', cursive",
                   WebkitTextStroke: "2px rgba(255, 255, 255, 0.3)",
@@ -395,7 +395,7 @@ export default function Home() {
                 Ready to Start Exploring?
               </h2>
               <p
-                className="text-white/90 max-w-xl mx-auto mb-12 text-2xl relative z-10"
+                className="text-white/90 max-w-xl mx-auto mb-6 sm:mb-12 text-base sm:text-2xl relative z-10"
                 style={{
                   fontFamily: "'Indie Flower', cursive",
                   textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
@@ -407,30 +407,30 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 max-w-4xl mx-auto relative z-10">
                 <Link
                   href="/programs/electronics"
-                  className="group flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-full font-label font-bold hover:bg-gray-100 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                  className="group flex items-center gap-2 sm:gap-3 bg-white text-blue-600 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:bg-gray-100 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
                 >
                   <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                     bolt
                   </span>
-                  <span>Discover: Electronics & Circuitry</span>
+                  <span>Discover: Electronics</span>
                 </Link>
                 <Link
                   href="/programs/art"
-                  className="group flex items-center gap-3 bg-amber-100 text-amber-700 px-8 py-4 rounded-full font-label font-bold hover:bg-amber-200 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                  className="group flex items-center gap-2 sm:gap-3 bg-amber-100 text-amber-700 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:bg-amber-200 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
                 >
                   <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                     draw
                   </span>
-                  <span>Discover: Drawing From Life</span>
+                  <span>Discover: Drawing</span>
                 </Link>
                 <Link
                   href="/programs/japanese"
-                  className="group flex items-center gap-3 bg-white text-red-400 px-8 py-4 rounded-full font-label font-bold hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                  className="group flex items-center gap-2 sm:gap-3 bg-white text-red-400 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
                 >
                   <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                     temple_buddhist
                   </span>
-                  <span>Discover: Japanese Language & Culture</span>
+                  <span>Discover: Japanese</span>
                 </Link>
               </div>
             </div>
@@ -441,42 +441,104 @@ export default function Home() {
       {/* Footer */}
       <footer
         id="contact"
-        className="bg-white w-full py-16 border-t border-slate-200"
+        className="bg-gray-900 w-full pt-12 sm:pt-16 pb-8 relative overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="flex flex-col items-center md:items-start gap-2">
-              <span className="text-2xl font-bold text-blue-600 font-headline">
-                Idaho Discovery Week
-              </span>
-              <p className="text-slate-500 text-sm font-body text-center md:text-left">
-                2026 Idaho Discovery Week
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-indigo-500 rounded-full blur-3xl"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-10 sm:mb-12">
+            {/* Brand */}
+            <div className="flex flex-col items-center md:items-start gap-4">
+              <div className="flex items-center gap-3">
+                <img
+                  alt="Idaho Discovery Week Logo"
+                  className="w-auto h-10 sm:h-12"
+                  src="/idwnewlogo.png"
+                />
+                <span className="text-lg sm:text-xl font-bold text-white font-headline">
+                  Idaho Discovery Week
+                </span>
+              </div>
+              <p className="text-gray-400 text-sm text-center md:text-left leading-relaxed max-w-xs">
+                A summer of hands-on learning, creativity, and discovery for
+                curious young minds in Idaho.
               </p>
             </div>
-            <div className="flex flex-col items-center md:items-end gap-4">
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-blue-600 text-lg">
+
+            {/* Quick Links */}
+            <div className="flex flex-col items-center md:items-start gap-3">
+              <h4 className="text-white font-label font-bold text-sm uppercase tracking-widest mb-1">
+                Programs
+              </h4>
+              <Link
+                href="/programs/electronics"
+                className="text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
+              >
+                Electronics & Circuitry
+              </Link>
+              <Link
+                href="/programs/art"
+                className="text-gray-400 text-sm hover:text-green-400 transition-colors duration-300"
+              >
+                Drawing From Life
+              </Link>
+              <Link
+                href="/programs/japanese"
+                className="text-gray-400 text-sm hover:text-red-400 transition-colors duration-300"
+              >
+                Japanese Language & Culture
+              </Link>
+            </div>
+
+            {/* Contact */}
+            <div className="flex flex-col items-center md:items-start gap-3">
+              <h4 className="text-white font-label font-bold text-sm uppercase tracking-widest mb-1">
+                Get In Touch
+              </h4>
+              <a
+                href="mailto:idahodiscoveryweek@gmail.com"
+                className="flex items-center gap-2 text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
+              >
+                <span className="material-symbols-outlined text-base">
                   email
                 </span>
-                <a
-                  href="mailto:idahodiscoveryweek@gmail.com"
-                  className="text-slate-700 font-medium text-sm hover:text-blue-600 transition-colors duration-300"
-                >
-                  idahodiscoveryweek@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-blue-600 text-lg">
+                idahodiscoveryweek@gmail.com
+              </a>
+              <a
+                href="tel:2082835068"
+                className="flex items-center gap-2 text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
+              >
+                <span className="material-symbols-outlined text-base">
                   phone
                 </span>
-                <a
-                  href="tel:2082835068"
-                  className="text-slate-700 font-medium text-sm hover:text-blue-600 transition-colors duration-300"
-                >
-                  (208) 283-5068
-                </a>
-              </div>
+                (208) 283-5068
+              </a>
+              <a
+                href="/#mission"
+                className="flex items-center gap-2 text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
+              >
+                <span className="material-symbols-outlined text-base">
+                  info
+                </span>
+                About Us
+              </a>
             </div>
+          </div>
+
+          {/* Divider + Copyright */}
+          <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-xs">
+              © 2026 Idaho Discovery Week. All rights reserved.
+            </p>
+            <p className="text-gray-600 text-xs flex items-center gap-1">
+              Made with
+              <span className="material-symbols-outlined text-red-400 text-sm">
+                favorite
+              </span>
+              in Idaho
+            </p>
           </div>
         </div>
       </footer>
