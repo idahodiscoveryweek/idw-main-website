@@ -49,7 +49,7 @@ export default function ArtPage() {
                 </span>
               </div>
               <span className="inline-flex items-center bg-white/20 backdrop-blur text-white text-sm font-bold font-label px-4 py-2 rounded-full border border-white/30">
-                $174.99
+                $174
               </span>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function ArtPage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $174.99
+                  $174
                 </p>
                 <a
                   href="https://book.stripe.com/aFa3cx3PU0rl7Hg64H2Nq03"
@@ -301,7 +301,7 @@ export default function ArtPage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $174.99
+                  $174
                 </p>
                 <a
                   href="https://book.stripe.com/28E00l1HMgqjbXwct52Nq04"
@@ -340,7 +340,7 @@ export default function ArtPage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $174.99
+                  $174
                 </p>
                 <a
                   href="https://book.stripe.com/8x2eVf726eibaTs2Sv2Nq05"

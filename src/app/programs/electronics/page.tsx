@@ -49,7 +49,7 @@ export default function ElectronicsPage() {
                 </span>
               </div>
               <span className="inline-flex items-center bg-white/20 backdrop-blur text-white text-sm font-bold font-label px-4 py-2 rounded-full border border-white/30">
-                $189.99
+                $189
               </span>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function ElectronicsPage() {
                 <div className="space-y-4 text-gray-600 text-sm sm:text-lg">
                   <p>
                     Embark on an exciting 5-day sci-fi adventure where you'll
-                    master coding and circuitry! Through an immersive space
+                    learn coding and circuitry! Through an immersive space
                     mission storyline, you'll repair a crashed spaceship by
                     completing daily hands-on projects that teach real-world
                     tech skills.
@@ -259,7 +259,7 @@ export default function ElectronicsPage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $189.99
+                  $189
                 </p>
                 <a
                   href="https://book.stripe.com/eVq5kFdquca3e5Ect52Nq01"
@@ -298,7 +298,7 @@ export default function ElectronicsPage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $189.99
+                  $189
                 </p>
                 <a
                   href="https://book.stripe.com/14AfZj726gqjaTs9gT2Nq02"
@@ -337,7 +337,7 @@ export default function ElectronicsPage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $189.99
+                  $189
                 </p>
                 <a
                   href="https://book.stripe.com/3cIfZjgCG8XRf9Ict52Nq00"

@@ -49,7 +49,7 @@ export default function JapanesePage() {
                 </span>
               </div>
               <span className="inline-flex items-center bg-white/20 backdrop-blur text-white text-sm font-bold font-label px-4 py-2 rounded-full border border-white/30">
-                $174.99
+                $174
               </span>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function JapanesePage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $174.99
+                  $174
                 </p>
                 <a
                   href="https://book.stripe.com/00w5kF3PU5LFgdMbp12Nq06"
@@ -320,7 +320,7 @@ export default function JapanesePage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $174.99
+                  $174
                 </p>
                 <a
                   href="https://book.stripe.com/cNi6oJeuya1V5z850D2Nq07"
@@ -359,7 +359,7 @@ export default function JapanesePage() {
               </div>
               <div className="mt-auto">
                 <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                  $174.99
+                  $174
                 </p>
                 <a
                   href="https://book.stripe.com/8x23cx3PUb5Zd1A50D2Nq08"
