@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function ElectronicsPage() {
   return (
@@ -355,6 +356,7 @@ export default function ElectronicsPage() {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

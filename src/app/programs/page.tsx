@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function ProgramsPage() {
   return (
@@ -7,7 +8,7 @@ export default function ProgramsPage() {
       <Header />
       {/* Hero Section */}
       <section
-        className="bg-gradient-to-br from-blue-50 to-indigo-50 pt-60 pb-24 relative"
+        className="bg-linear-to-br from-blue-50 to-indigo-50 pt-28 sm:pt-60 pb-12 sm:pb-24 relative"
         style={{
           backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
           backgroundSize: "cover",
@@ -17,11 +18,11 @@ export default function ProgramsPage() {
       >
         {/* Overlay for opacity */}
         <div className="absolute inset-0 bg-white/60"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-          <h1 className="font-headline text-5xl md:text-6xl font-black text-gray-800 mb-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="font-headline text-3xl sm:text-5xl md:text-6xl font-black text-gray-800 mb-4 sm:mb-6">
             Our Programs
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Choose your adventure! Each program is designed to inspire
             creativity, build skills, and create unforgettable summer memories.
           </p>
@@ -29,8 +30,8 @@ export default function ProgramsPage() {
       </section>
 
       {/* Programs Grid */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-10 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Electronics Program */}
             <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
@@ -54,7 +55,7 @@ export default function ProgramsPage() {
                   Lost In Space" curriculum.
                 </p>
                 <div className="mt-auto">
-                  <div className="flex items-center gap-6 text-sm font-label text-blue-500 mb-6">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-blue-500 mb-6">
                     <span className="flex items-center gap-2">
                       <span className="material-symbols-outlined">devices</span>
                       Electronics Kit Included
@@ -66,12 +67,12 @@ export default function ProgramsPage() {
                   </div>
                   <Link
                     href="/programs/electronics"
-                    className="mt-0 group flex items-center justify-center gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                    className="mt-0 group flex items-center justify-center gap-2 sm:gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
                   >
                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                       bolt
                     </span>
-                    <span>Discover: Electronics & Circuitry</span>
+                    <span>Discover: Electronics</span>
                   </Link>
                 </div>
               </div>
@@ -99,7 +100,7 @@ export default function ProgramsPage() {
                   techniques in a creative environment.
                 </p>
                 <div className="mt-auto">
-                  <div className="flex items-center gap-6 text-sm font-label text-amber-500 mb-6">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-amber-500 mb-6">
                     <span className="flex items-center gap-2">
                       <span className="material-symbols-outlined">palette</span>
                       Art Supplies Included
@@ -111,12 +112,12 @@ export default function ProgramsPage() {
                   </div>
                   <Link
                     href="/programs/art"
-                    className="mt-0 group flex items-center justify-center gap-3 bg-linear-to-r from-amber-500 to-amber-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-amber-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                    className="mt-0 group flex items-center justify-center gap-2 sm:gap-3 bg-linear-to-r from-amber-500 to-amber-400 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-amber-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
                   >
                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                       draw
                     </span>
-                    <span>Discover: Drawing From Life</span>
+                    <span>Discover: Drawing</span>
                   </Link>
                 </div>
               </div>
@@ -144,7 +145,7 @@ export default function ProgramsPage() {
                   interactive activities.
                 </p>
                 <div className="mt-auto">
-                  <div className="flex items-center gap-6 text-sm font-label text-emerald-500 mb-6">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-emerald-500 mb-6">
                     <span className="flex items-center gap-2">
                       <span className="material-symbols-outlined">
                         menu_book
@@ -158,12 +159,12 @@ export default function ProgramsPage() {
                   </div>
                   <Link
                     href="/programs/japanese"
-                    className="mt-0 group flex items-center justify-center gap-3 bg-linear-to-r from-emerald-500 to-emerald-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-emerald-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                    className="mt-0 group flex items-center justify-center gap-2 sm:gap-3 bg-linear-to-r from-emerald-500 to-emerald-400 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-emerald-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
                   >
                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                       temple_buddhist
                     </span>
-                    <span>Discover: Japanese Language & Culture</span>
+                    <span>Discover: Japanese</span>
                   </Link>
                 </div>
               </div>
@@ -171,6 +172,7 @@ export default function ProgramsPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

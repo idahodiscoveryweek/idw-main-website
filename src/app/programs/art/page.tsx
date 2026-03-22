@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function ArtPage() {
   return (
@@ -358,6 +359,7 @@ export default function ArtPage() {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

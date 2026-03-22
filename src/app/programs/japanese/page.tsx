@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function JapanesePage() {
   return (
@@ -377,6 +378,7 @@ export default function JapanesePage() {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
