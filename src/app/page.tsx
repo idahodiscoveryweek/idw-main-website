@@ -92,8 +92,8 @@ export default function Home() {
           {/* Overlay for opacity */}
           <div className="absolute inset-0 bg-white/60"></div>
           <div className="relative z-10 max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-              <div className="max-w-xl">
+            <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-6">
+              <div className="max-w-xl text-center md:text-left">
                 <span className="font-label text-blue-500 font-bold tracking-widest uppercase text-sm mb-4 block">
                   Our Tracks
                 </span>
