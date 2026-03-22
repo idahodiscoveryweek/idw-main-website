@@ -1,65 +1,485 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen bg-background font-body text-on-background antialiased">
+      <Header />
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section
+          className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-40"
+          style={{
+            backgroundImage: "url(/cloud_background.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Dark overlay for better text contrast */}
+          <div className="absolute inset-0 bg-linear-to-b from-black/80 via-black/60 to-transparent"></div>
+          <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <h1 className="font-headline text-6xl md:text-8xl font-extrabold text-white tracking-tighter mb-8 leading-[1.1] animate-fade-in">
+              Let's Create Something <br />{" "}
+              <span
+                className="text-transparent bg-clip-text inline-block"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(to right, #447CB6, #447CB6)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontStyle: "italic",
+                  fontWeight: "normal",
+                  lineHeight: "1.2",
+                  paddingRight: "0.1em",
+                  display: "inline-block",
+                }}
+              >
+                Amazing This Summer
+              </span>
+            </h1>
+            <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/90 mb-12 font-medium leading-relaxed">
+              Join us for a summer of hands-on fun, creativity, and discovery.
+              Perfect for curious minds who love to build, draw, and explore new
+              ideas together!
+            </p>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <Link
+                href="/programs/electronics"
+                className="group flex items-center gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+              >
+                <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                  bolt
+                </span>
+                <span>Discover: Electronics & Circuitry</span>
+              </Link>
+              <Link
+                href="/programs/art"
+                className="group flex items-center gap-3 bg-amber-100 text-amber-700 px-8 py-4 rounded-full font-label font-bold hover:bg-amber-200 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+              >
+                <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                  draw
+                </span>
+                <span>Discover: Drawing From Life</span>
+              </Link>
+              <Link
+                href="/programs/japanese"
+                className="group flex items-center gap-3 bg-white text-red-400 px-8 py-4 rounded-full font-label font-bold hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+              >
+                <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                  temple_buddhist
+                </span>
+                <span>Discover: Japanese Language & Culture</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Discovery Tracks Section */}
+        <section
+          className="mx-auto px-6 py-24 relative"
+          style={{
+            backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          {/* Overlay for opacity */}
+          <div className="absolute inset-0 bg-white/60"></div>
+          <div className="relative z-10 max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+              <div className="max-w-xl">
+                <span className="font-label text-blue-500 font-bold tracking-widest uppercase text-sm mb-4 block">
+                  Our Tracks
+                </span>
+                <h2 className="font-headline text-4xl md:text-5xl font-black text-gray-800 tracking-tight">
+                  Choose Your Adventure
+                </h2>
+              </div>
+              <div className="bg-linear-to-r from-indigo-50 to-blue-50 border-l-4 border-blue-500 rounded-lg p-6 shadow-sm">
+                <p className="text-gray-700 font-serif text-lg italic leading-relaxed">
+                  All courses taught by passionate experts with real-world
+                  experience. Each course runs 2 hours daily, Monday-Friday for
+                  one week.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Track 1: Electronics */}
+              <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
+                <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
+                  <img
+                    alt="Electronics and circuitry class"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src="/breadboard-wires-micro-servos-connected-600nw-2402057335.webp"
+                  />
+                  <div className="absolute top-4 left-4 bg-linear-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
+                    Tech Track
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <div className="grow">
+                    <h3 className="font-headline text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-500 transition-colors duration-300">
+                      Electronics & Circuitry
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-6 font-medium">
+                      Master the invisible power! Using Arduino
+                      microcontrollers, you'll learn electricity basics while
+                      navigating our "A Week Lost In Space" curriculum. Use your
+                      computer to fix your ship and return to Earth, then build
+                      your own spaceship game to take home.
+                    </p>
+                    <div className="flex items-center gap-6 text-sm font-label text-blue-500">
+                      <span className="flex items-center gap-2">
+                        <span className="material-symbols-outlined">
+                          devices
+                        </span>
+                        Electronics Kit Included
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <span className="material-symbols-outlined">group</span>
+                        Ages 10+
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <Link
+                      href="/programs/electronics"
+                      className="mt-0 group flex items-center justify-center gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                    >
+                      <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                        bolt
+                      </span>
+                      <span>Discover: Electronics & Circuitry</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Track 2: Art */}
+              <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
+                <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
+                  <img
+                    alt="Drawing from life art class"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src="/drawingfromlife.jpg"
+                  />
+                  <div className="absolute top-4 left-4 bg-linear-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
+                    Arts Track
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <div className="grow">
+                    <h3 className="font-headline text-2xl font-bold text-gray-800 mb-4 group-hover:text-amber-500 transition-colors duration-300">
+                      Drawing From Life
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-6 font-medium">
+                      See the world through an artist's eyes. You'll develop
+                      fundamental drawing techniques by drawing organic objects
+                      from life, building your artistic portfolio with
+                      professional guidance. Your final project will be creating
+                      a beautiful self portrait to take home.
+                    </p>
+                    <div className="flex items-center gap-6 text-sm font-label text-amber-500">
+                      <span className="flex items-center gap-2">
+                        <span className="material-symbols-outlined">brush</span>
+                        Drawing Kit Included
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <span className="material-symbols-outlined">
+                          person
+                        </span>
+                        All Skill Levels
+                      </span>
+                    </div>
+                  </div>
+                  <Link
+                    href="/programs/art"
+                    className="mt-6 group flex items-center justify-center gap-3 bg-amber-100 text-amber-700 px-8 py-4 rounded-full font-label font-bold hover:bg-amber-200 transition-all duration-300 hover:shadow-lg"
+                  >
+                    <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                      draw
+                    </span>
+                    <span>Discover: Drawing From Life</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Track 3: Japanese */}
+              <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
+                <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
+                  <img
+                    alt="Japanese language and culture class"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    src="/japaneselanguageandculture.jpg"
+                  />
+                  <div className="absolute top-4 left-4 bg-linear-to-r from-emerald-500 to-emerald-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
+                    Global Track
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <div className="grow">
+                    <h3 className="font-headline text-2xl font-bold text-gray-800 mb-4 group-hover:text-emerald-500 transition-colors duration-300">
+                      Japanese Language & Culture
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-6 font-medium">
+                      A journey through Japan! You'll learn cultural nuances,
+                      basic words, and phrases to help you get around Japan.
+                      Experience traditional foods and snacks, then participate
+                      in a formal Japanese meal while mastering proper eating
+                      customs.
+                    </p>
+                    <div className="flex items-center gap-6 text-sm font-label text-red-400">
+                      <span className="flex items-center gap-2">
+                        <span className="material-symbols-outlined">
+                          restaurant
+                        </span>
+                        Traditional Food & Games
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <span className="material-symbols-outlined">group</span>
+                        Ages 8+
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <Link
+                      href="/programs/japanese"
+                      className="group flex items-center justify-center gap-3 bg-white text-red-400 px-8 py-4 rounded-full font-label font-bold border-2 border-red-200 hover:border-red-300 transition-all duration-300 hover:shadow-lg"
+                    >
+                      <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                        temple_buddhist
+                      </span>
+                      <span>Discover: Japanese Language & Culture</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mission Section */}
+        <section
+          id="mission"
+          className="bg-linear-to-br from-blue-50 to-indigo-50 py-32 overflow-hidden relative"
+        >
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative order-2 lg:order-1">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="space-y-6">
+                  <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl -rotate-2 transition-transform hover:rotate-0 duration-500">
+                    <img
+                      alt="Grant, Instructor"
+                      className="w-full h-full object-cover"
+                      src="/IDWgrantprofile.png"
+                    />
+                  </div>
+                  <div className="bg-blue-500 text-white p-6 rounded-2xl shadow-lg">
+                    <span className="font-label font-bold text-xs uppercase tracking-widest block mb-2">
+                      Meet Grant
+                    </span>
+                    <p className="text-sm font-medium mb-3">
+                      Electronics Enthusiast & Future Engineer
+                    </p>
+                    <div className="bg-white/20 rounded-lg px-3 py-2">
+                      <p className="text-xs font-semibold">
+                        Major: Business Administration & Computer Science
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-6 pt-16">
+                  <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
+                    <img
+                      alt="Moema, Instructor"
+                      className="w-full h-full object-cover"
+                      src="/IDWmoemaprofile.png"
+                    />
+                  </div>
+                  <div className="bg-emerald-500 text-white p-6 rounded-2xl shadow-lg">
+                    <span className="font-label font-bold text-xs uppercase tracking-widest block mb-2">
+                      Meet Moema
+                    </span>
+                    <p className="text-sm font-medium mb-3">
+                      Artist & Japanese Language Instructor
+                    </p>
+                    <div className="bg-white/20 rounded-lg px-3 py-2">
+                      <p className="text-xs font-semibold">
+                        Major: Animation & Japanese
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Decorative cloud background for instructors */}
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-20 pointer-events-none">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M44.7,-76.4C58.1,-69.2,69.2,-57.4,77.3,-44.1C85.4,-30.8,90.4,-15.4,88.7,-0.9C87.1,13.5,78.7,27,69.5,38.6C60.3,50.2,50.2,59.8,38.3,67.3C26.4,74.8,13.2,80.1,-0.6,81.1C-14.4,82.1,-28.8,78.7,-41.4,71.7C-54,64.7,-64.8,54.1,-72.8,41.6C-80.8,29.1,-86,14.5,-86.3,-0.1C-86.6,-14.8,-82,-29.6,-73.3,-41.9C-64.6,-54.2,-51.7,-64,-37.9,-70.8C-24.1,-77.6,-9.3,-81.4,3.1,-86.8C15.5,-92.2,28.7,-83.6,44.7,-76.4Z"
+                    fill="#0058bc"
+                    transform="translate(100 100)"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 space-y-8">
+              <span className="font-label text-indigo-600 font-bold tracking-widest uppercase text-sm mb-6 block">
+                Our Mission
+              </span>
+              <h2 className="font-headline text-4xl md:text-5xl font-black text-gray-800 mb-8 leading-tight tracking-tight">
+                Why Idaho Discovery Week?
+              </h2>
+              <div className="space-y-6 text-gray-600 font-medium text-lg leading-relaxed">
+                <p className="transition-all duration-300 hover:text-gray-800">
+                  We believe that summer should be more than just a break. It
+                  should be a launchpad. As students ourselves, we wanted to
+                  create an experience we wish we had growing up in Idaho.
+                </p>
+                <p className="transition-all duration-300 hover:text-gray-800">
+                  By attending Idaho Discovery Week, your kids aren't just
+                  learning electronics, art, or Japanese; they're supporting
+                  local students. We are teaching these summer classes to save
+                  for college while striving to build the most creative,
+                  high-energy environment for kids in our community.
+                </p>
+              </div>
+              <div className="mt-12 flex items-center gap-6">
+                <div className="flex items-center gap-3">
+                  <span className="material-symbols-outlined text-blue-500 text-2xl">
+                    school
+                  </span>
+                  <p className="text-base font-label font-bold text-gray-800">
+                    500+ hours of teaching experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Newsletter / CTA */}
+        <section
+          className="mx-auto px-6 py-24 relative"
+          style={{
+            backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        >
+          {/* Overlay for opacity */}
+          <div className="absolute inset-0 bg-white/60"></div>
+          <div className="relative z-10 max-w-5xl mx-auto text-center">
+            <div className="bg-linear-to-r from-[#437eb9] to-[#366898] rounded-2xl p-12 md:p-20 relative overflow-hidden shadow-2xl">
+              <div
+                className="absolute top-0 right-0 p-8 opacity-60"
+                style={{ color: "#f39608" }}
+              >
+                <span className="material-symbols-outlined text-9xl animate-pulse">
+                  rocket_launch
+                </span>
+              </div>
+              <h2
+                className="text-5xl md:text-7xl font-normal text-white mb-8 relative z-10"
+                style={{
+                  fontFamily: "'Indie Flower', cursive",
+                  WebkitTextStroke: "2px rgba(255, 255, 255, 0.3)",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+                }}
+              >
+                Ready to Start Exploring?
+              </h2>
+              <p
+                className="text-white/90 max-w-xl mx-auto mb-12 text-2xl relative z-10"
+                style={{
+                  fontFamily: "'Indie Flower', cursive",
+                  textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+                }}
+              >
+                Limited spots available for 2026 sessions. Secure your child's
+                place for a summer of discovery today.
+              </p>
+              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 max-w-4xl mx-auto relative z-10">
+                <Link
+                  href="/programs/electronics"
+                  className="group flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-full font-label font-bold hover:bg-gray-100 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                >
+                  <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                    bolt
+                  </span>
+                  <span>Discover: Electronics & Circuitry</span>
+                </Link>
+                <Link
+                  href="/programs/art"
+                  className="group flex items-center gap-3 bg-amber-100 text-amber-700 px-8 py-4 rounded-full font-label font-bold hover:bg-amber-200 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                >
+                  <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                    draw
+                  </span>
+                  <span>Discover: Drawing From Life</span>
+                </Link>
+                <Link
+                  href="/programs/japanese"
+                  className="group flex items-center gap-3 bg-white text-red-400 px-8 py-4 rounded-full font-label font-bold hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
+                >
+                  <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
+                    temple_buddhist
+                  </span>
+                  <span>Discover: Japanese Language & Culture</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
+
+      {/* Footer */}
+      <footer
+        id="contact"
+        className="bg-white w-full py-16 border-t border-slate-200"
+      >
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <span className="text-2xl font-bold text-blue-600 font-headline">
+                Idaho Discovery Week
+              </span>
+              <p className="text-slate-500 text-sm font-body text-center md:text-left">
+                2026 Idaho Discovery Week
+              </p>
+            </div>
+            <div className="flex flex-col items-center md:items-end gap-4">
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-blue-600 text-lg">
+                  email
+                </span>
+                <a
+                  href="mailto:idahodiscoveryweek@gmail.com"
+                  className="text-slate-700 font-medium text-sm hover:text-blue-600 transition-colors duration-300"
+                >
+                  idahodiscoveryweek@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-blue-600 text-lg">
+                  phone
+                </span>
+                <a
+                  href="tel:2082835068"
+                  className="text-slate-700 font-medium text-sm hover:text-blue-600 transition-colors duration-300"
+                >
+                  (208) 283-5068
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idaho Discovery Week | Skyward Explorer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Lexend:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#4b5b81",
+              "surface-container-low": "#edf0ff",
+              "primary-dim": "#004ca5",
+              "secondary-fixed-dim": "#ffb548",
+              "outline-variant": "#9cadd7",
+              "inverse-primary": "#4d8efe",
+              "tertiary-fixed": "#ff9473",
+              "tertiary-dim": "#952800",
+              "primary-fixed-dim": "#5291ff",
+              "error-container": "#fb5151",
+              "surface-container-highest": "#d0dcff",
+              "surface-container-high": "#d9e2ff",
+              "background": "#f6f6ff",
+              "surface-container": "#e1e8ff",
+              "tertiary": "#a83206",
+              "secondary-dim": "#6f4700",
+              "surface-dim": "#c4d4ff",
+              "surface-bright": "#f6f6ff",
+              "inverse-on-surface": "#8c9cc6",
+              "on-primary-fixed": "#000000",
+              "primary": "#0058bc",
+              "surface-variant": "#d0dcff",
+              "secondary-fixed": "#ffc87f",
+              "on-primary-container": "#00214f",
+              "inverse-surface": "#000d29",
+              "outline": "#66769e",
+              "on-error": "#ffefee",
+              "tertiary-container": "#ff9473",
+              "secondary-container": "#ffc87f",
+              "on-tertiary": "#ffefeb",
+              "on-secondary": "#fff0e2",
+              "surface": "#f6f6ff",
+              "on-secondary-fixed-variant": "#704800",
+              "on-background": "#1d2e51",
+              "tertiary-fixed-dim": "#ff7d55",
+              "on-secondary-fixed": "#4a2e00",
+              "on-error-container": "#570008",
+              "primary-container": "#6d9fff",
+              "on-secondary-container": "#644000",
+              "on-tertiary-fixed": "#340800",
+              "on-tertiary-fixed-variant": "#6e1c00",
+              "error": "#b31b25",
+              "error-dim": "#9f0519",
+              "primary-fixed": "#6d9fff",
+              "secondary": "#7f5200",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#002a61",
+              "on-primary": "#f0f2ff",
+              "on-surface": "#1d2e51",
+              "on-tertiary-container": "#5f1600",
+              "surface-tint": "#0058bc"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cloud-mask-bottom {
+            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%230099ff' fill-opacity='1' d='M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            mask-position: bottom;
+            mask-size: contain;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4"><img alt="Idaho Discovery Week Logo" class="w-auto h-20" data-alt="Official logo for Idaho Discovery Week educational event" src="https://lh3.googleusercontent.com/aida/ADBb0ugsSyWE7XcqVOwRU8eu1Ld1o_WSnB3NeMQQzWIclH-PMWXhOEMhb-Vis-bRxAcZtIHXToXfxQXu7_wkwJw-rDZFWD6h-QX6Uckenjy1QLrhbjrbm2seGVvCIBqYyKY_5qe6LMEwCC50FtRQ-UYk-oPy9oJrevjyxW15YlIdvuOsda4HCbVhJ4p7rPB9QjGeSgjfIKn_Efu8_4JyuzTyBzT7X4TiYWXL-Y1nHRfs3HEV5Ka7c1qwy-yjJym059GzkWWUvJAhtq2hQQ"/>
+<span class="text-2xl font-black text-blue-700 dark:text-blue-400 tracking-tighter font-headline">Idaho Discovery Week</span></div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-all duration-300" href="#">Programs</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-all duration-300" href="#">Instructors</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-all duration-300" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-500 transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label font-bold text-sm tracking-wide transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+                    Register Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden bg-gradient-to-b from-surface-container-low to-background pt-20 pb-40">
+<!-- Decorative Background Elements -->
+<div class="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute bottom-20 right-10 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-on-background tracking-tighter mb-8 leading-[1.1]">
+                    The Sky is Just <br/> <span class="text-primary italic">The Beginning</span>
+</h1>
+<p class="max-w-2xl mx-auto text-lg md:text-xl text-on-surface-variant mb-12 font-medium leading-relaxed">
+                    Join Grant and Moema for an unforgettable week of hands-on learning, creative exploration, and high-energy discovery in the heart of Idaho.
+                </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-4">
+<button class="group flex items-center gap-3 bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-label font-bold shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
+<span>Discover: Electronics &amp; Circuitry</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="bolt">bolt</span>
+</button>
+<button class="group flex items-center gap-3 bg-surface-container-highest text-primary px-8 py-4 rounded-full font-label font-bold hover:bg-surface-dim transition-all">
+<span>Discover: Drawing From Life</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="draw">draw</span>
+</button>
+<button class="group flex items-center gap-3 bg-white text-tertiary px-8 py-4 rounded-full font-label font-bold border-2 border-tertiary/10 hover:border-tertiary/30 transition-all shadow-sm">
+<span>Discover: Japanese Culture</span>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="temple_buddhist">temple_buddhist</span>
+</button>
+</div>
+</div>
+<!-- Organic Cloud Edge Mask -->
+<div class="absolute bottom-0 left-0 w-full h-32 bg-background cloud-mask-bottom"></div>
+</section>
+<!-- Discovery Tracks Section -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<span class="font-label text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Our Tracks</span>
+<h2 class="font-headline text-4xl md:text-5xl font-black text-on-background tracking-tight">Choose Your Adventure</h2>
+</div>
+<p class="text-on-surface-variant font-medium md:max-w-xs">Each course is designed to spark curiosity and build real-world skills through immersive projects.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Track 1: Electronics -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full hover:-translate-y-2">
+<div class="aspect-[4/3] rounded-lg overflow-hidden mb-6 relative">
+<img alt="Electronics and circuitry class" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a breadboard with colorful wires and LED lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUfvwy97ve4tAfRvXzuNvQVGe1OUMnFkNcshYFHIesaV3mTETyw9tmGCT_IgTpNbpYeKDULSlgCpeRWq_mdT02B3ZxojMd5crJQDTK44RwA1pqW_HhbunHQhA5UJpWG7-CdIftnrQSsB6Bw2YdhktXezQ7LsA7yc5JmqS_1N0Rj-JqQiBvSC_BboIWPZlFm5nIQqBnpfrH4gJvNfDTecOb19cHr1wGjNojDI6X6HyevfwM-o_hddBnLDcA8C3a5xTbFgjmPuEubXg"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Tech Track</div>
+</div>
+<div class="px-2 pb-6 flex-grow">
+<h3 class="font-headline text-2xl font-bold text-on-background mb-4 group-hover:text-primary transition-colors">Electronics &amp; Circuitry</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            Master the invisible power! Learn to build your own gadgets, understand breadboards, and create light-up projects from scratch.
+                        </p>
+<div class="flex items-center gap-4 text-sm font-label text-primary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined scale-75" data-icon="schedule">schedule</span> 15 Hours</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined scale-75" data-icon="group">group</span> Ages 10-14</span>
+</div>
+</div>
+</div>
+<!-- Track 2: Art -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full hover:-translate-y-2 md:mt-10">
+<div class="aspect-[4/3] rounded-lg overflow-hidden mb-6 relative">
+<img alt="Drawing from life art class" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sketchbook with pencils and charcoal drawings of a still life" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNjlHntq3if5HysWY6_ZM40GX1aZWRN28J2y7eVrEDWewcndq0mMyrtIPxaAJ1pZyWznAyhixVxSkadtDHZx0OwKnP-jteusxDXV_V0iWyfWTJKXsGg23ubiS3y71ib2IFG-DWU-_4t1HHTkmZ5S_Py65ygHd1dsalgai_6DJXmh0FUGFYSu1RCqeT0Mk_skWMLMUg3Mc_WYLzut7PD9y6IuxIolX4kmMEKApK6sXbvla6NK53MankmIFZIqTusS6LOyCrBFoTyeo"/>
+<div class="absolute top-4 left-4 bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Arts Track</div>
+</div>
+<div class="px-2 pb-6 flex-grow">
+<h3 class="font-headline text-2xl font-bold text-on-background mb-4 group-hover:text-secondary transition-colors">Drawing From Life</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            See the world through an artist's eyes. We'll explore anatomy, light, and perspective while sketching real objects and local scenery.
+                        </p>
+<div class="flex items-center gap-4 text-sm font-label text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined scale-75" data-icon="palette">palette</span> Expert Kit Included</span>
+</div>
+</div>
+</div>
+<!-- Track 3: Japanese -->
+<div class="group bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col h-full hover:-translate-y-2">
+<div class="aspect-[4/3] rounded-lg overflow-hidden mb-6 relative">
+<img alt="Japanese language and culture class" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Japanese tea ceremony set and calligraphy tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLqaHhP-DXUBgtbIofcSu0w7yJsUvIb1NwRGaIneijJ7V4d9ppaFpI5_mCY9TLGUgVcqzzNjQuCZa5ceOC5o9m7N3dmPcR_X_a3EKcM5hvDG16qSlTLqdyN9r3DGPFP4fK3xtRynWmSWNCqSVkRyBAiQUiiAQs4GgZ1skGuN2ns1bJgc49LV2Bv1eZabueXgoQlW0zZUUp-l1zxMGhzLIrdlgJGzcjG5gzms-z_7jvxIqplIwfph2JuYZIY2Ky1UpzjCtLTaKy2kg"/>
+<div class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Global Track</div>
+</div>
+<div class="px-2 pb-6 flex-grow">
+<h3 class="font-headline text-2xl font-bold text-on-background mb-4 group-hover:text-tertiary transition-colors">Japanese Language &amp; Culture</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6 font-medium">
+                            A journey through Japan! Learn basic Hiragana, traditional customs, and the modern wonders of Japanese culture in a fun, immersive setting.
+                        </p>
+<div class="flex items-center gap-4 text-sm font-label text-tertiary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined scale-75" data-icon="translate">translate</span> Interactive Apps</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Section -->
+<section class="bg-surface-container-low py-32 overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden aspect-[3/4] shadow-2xl rotate-[-2deg]">
+<img alt="Grant, Instructor" class="w-full h-full object-cover" data-alt="Friendly portrait of Grant, an instructor for Idaho Discovery Week" src="https://lh3.googleusercontent.com/aida/ADBb0uhYo0X_tKH1CHOeW3jIf3uNrHUXB3aFfNXbiRGl_R4_RaeHDacdUF2t-5Af4AL43cJsxCPgZC08QbqmoEw6u23aJULJPvGknHXa4-JUqTMj6XuBORoNBOt5Oo0PHlOtIIvwET3qzwBZR_aCKUrBvQO2kU4OFCZUgixmTtvPfB38gcBDwDcNPkjNnGt7NEROzfv7Zzmu2krX_7LLOr6IaVfvXaJejAPjWwhJ2KWRjbf3zcVdtx6RDjiHtwwhOwB5Qcsc0QUDZyWKUA"/>
+</div>
+<div class="bg-primary-container p-4 rounded-xl text-on-primary-container">
+<span class="font-label font-bold text-xs uppercase tracking-widest block mb-1">Meet Grant</span>
+<p class="text-sm font-medium">Electronics Enthusiast &amp; Future Engineer</p>
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="rounded-xl overflow-hidden aspect-[3/4] shadow-2xl rotate-[3deg]">
+<img alt="Moema, Instructor" class="w-full h-full object-cover" data-alt="Smiling portrait of Moema, an instructor for Idaho Discovery Week" src="https://lh3.googleusercontent.com/aida/ADBb0uiQ6TWKkLxY2zoAnFbGHgdctAaQ1Ap4IEyUyMPJB5S0zQyQqpcIyzlPSJebt6oHDjEsfOyXN6-SPdhUHu8CLOz9TMa1TzgyOxadFKvyFMQ_OIKX9kjfNSeHRDKfUvZFN5zZu7q92adzZhkoBX5ydJBhh0AVm_5iMOlYjfCM4k32yunDCo0Q1bw_MrUw3CmjhgBfiyMshRKN2pbEnOtx5dJfseGNDiTMCQaGz-Jym1FdCO9vJXnCK9gW8EDTCsr1xN-P0I3WOV0SIQ"/>
+</div>
+<div class="bg-tertiary-container p-4 rounded-xl text-on-tertiary-container">
+<span class="font-label font-bold text-xs uppercase tracking-widest block mb-1">Meet Moema</span>
+<p class="text-sm font-medium">Artist &amp; Cultural Explorer</p>
+</div>
+</div>
+</div>
+<!-- Decorative cloud background for instructors -->
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-20 pointer-events-none">
+<svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.7,-76.4C58.1,-69.2,69.2,-57.4,77.3,-44.1C85.4,-30.8,90.4,-15.4,88.7,-0.9C87.1,13.5,78.7,27,69.5,38.6C60.3,50.2,50.2,59.8,38.3,67.3C26.4,74.8,13.2,80.1,-0.6,81.1C-14.4,82.1,-28.8,78.7,-41.4,71.7C-54,64.7,-64.8,54.1,-72.8,41.6C-80.8,29.1,-86,14.5,-86.3,-0.1C-86.6,-14.8,-82,-29.6,-73.3,-41.9C-64.6,-54.2,-51.7,-64,-37.9,-70.8C-24.1,-77.6,-9.3,-81.4,3.1,-86.8C15.5,-92.2,28.7,-83.6,44.7,-76.4Z" fill="#0058bc" transform="translate(100 100)"></path>
+</svg>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<span class="font-label text-tertiary font-bold tracking-widest uppercase text-sm mb-6 block">Our Mission</span>
+<h2 class="font-headline text-4xl md:text-5xl font-black text-on-background mb-8 leading-tight tracking-tight">
+                        Why Idaho Discovery Week?
+                    </h2>
+<div class="space-y-6 text-on-surface-variant font-medium text-lg leading-relaxed">
+<p>
+                            We believe that summer should be more than just a break—it should be a launchpad. As students ourselves, we wanted to create an experience we wish we had growing up in Idaho.
+                        </p>
+<p>
+                            By attending Idaho Discovery Week, your kids aren't just learning electronics or art; they're supporting local students. We are teaching these summer classes to save for our college tuition while striving to build the most creative, high-energy environment for kids in our community.
+                        </p>
+</div>
+<div class="mt-12 flex items-center gap-6">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-slate-200">
+<img alt="Parent Avatar" data-alt="Small circular profile photo of a smiling parent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA35J0Y49svNRtc2IhKklLpH_ssobCPze2jyYxR70BllZNfWKAKgmZsDJPshrVnvmyvH_H5hDjuCohlCxqkS3I_4IC_hwaC_sdUcdjSe_DompElew8s2Yc4hS5Pste0btJnpSdj01p3_9LzW-swvcc_2y2QVI86r-BMWFb1DjLpMgqbcc5tbx_RbBMIDL5sfQUbwyESQIUshEPZ7zvHsH9Klq5MlIA7c1m1jiBCsx7U_uudzSdYp_HYkk232_S7PjsMkNNgXoU7Tp0"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-slate-300">
+<img alt="Parent Avatar" data-alt="Small circular profile photo of a happy parent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7qM1ZrNnEIM5x_WObx8img8fnzFq-KfDjiGCEvJ40Yw5IIrf6fJV_AzsC65WaXEVY-7xv27qHjwGxYbtwmpC4XVNCKl75Q_oLg2VaZ3fUHuTe0PTxzDL5isXXd9uQh4zakPCgAJAupuK_5fEoPwM8D4h5cnOIsq-WyFIDsADiGuDM576euBLtWaCsNiKzO1vZhHdN8LAT70UCqDHeyOgFoEw7yNnQUuYB1DCU9uHRWZvyC9In0mgOBPOWMlTcvLeJ100ITExwmgk"/>
+</div>
+<div class="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-slate-400">
+<img alt="Parent Avatar" data-alt="Small circular profile photo of a proud parent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy4YQUtKE8-GtNU4Kwgj5CE2jmVCot73fz54edTXRP_TrHh9SK7BsIGEO5cfCeEoxPvkO9nMokcaJIctjpdfiC427UkFp_iwmJove4Yg18I0ajeF6xBO6kyL7trIdfvxIsmcco_wsQej2bezmDQ2oXL02REVKCx-7lKqoP3AJHq4RTATa-4u0Ca599tPceE2qVEy5S-AIAajlP6hwTuLgdrtf-7hD-5kxzMqdXRhD487f_TH5wa_YxOLykkFabtW1kejqr8wsfEAQ"/>
+</div>
+</div>
+<p class="text-sm font-label font-bold text-on-background">Joined by 50+ Idaho families</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-5xl mx-auto px-6 py-24 text-center">
+<div class="bg-primary rounded-xl p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-20 text-white">
+<span class="material-symbols-outlined text-9xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h2 class="font-headline text-4xl md:text-6xl font-black text-on-primary mb-8 relative z-10">Ready to start exploring?</h2>
+<p class="text-on-primary/80 max-w-xl mx-auto mb-12 text-lg relative z-10">Limited spots available for the 2024 session. Secure your child's place in the digital museum of discovery today.</p>
+<div class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-4 max-w-4xl mx-auto relative z-10">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 rounded-full font-label font-bold hover:bg-secondary-fixed-dim transition-all shadow-lg text-sm">
+                        Discover: Electronics &amp; Circuitry
+                    </button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-full font-label font-bold hover:bg-surface-dim transition-all shadow-lg text-sm">
+                        Discover: Drawing From Life
+                    </button>
+<button class="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded-full font-label font-bold hover:opacity-90 transition-all shadow-lg text-sm">
+                        Discover: Japanese Language &amp; Culture
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full pt-20 pb-10">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-xl font-bold text-blue-800 dark:text-blue-300 font-headline">Idaho Discovery Week</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium font-body text-center md:text-left">
+                    © 2024 Idaho Discovery Week. Building the Digital Museum of Discovery.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 font-medium text-sm hover:text-orange-600 dark:hover:text-orange-400 transition-transform hover:translate-x-1 duration-200" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium text-sm hover:text-orange-600 dark:hover:text-orange-400 transition-transform hover:translate-x-1 duration-200" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium text-sm hover:text-orange-600 dark:hover:text-orange-400 transition-transform hover:translate-x-1 duration-200" href="#">Safety Guidelines</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium text-sm hover:text-orange-600 dark:hover:text-orange-400 transition-transform hover:translate-x-1 duration-200" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

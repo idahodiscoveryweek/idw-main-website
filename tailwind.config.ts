@@ -1,0 +1,81 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "on-surface-variant": "#4a5568",
+        "surface-container-low": "#f7fafc",
+        "primary-dim": "#2563eb",
+        "secondary-fixed-dim": "#fbbf24",
+        "outline-variant": "#e2e8f0",
+        "inverse-primary": "#60a5fa",
+        "tertiary-fixed": "#86efac",
+        "tertiary-dim": "#059669",
+        "primary-fixed-dim": "#93c5fd",
+        "error-container": "#fee2e2",
+        "surface-container-highest": "#e2e8f0",
+        "surface-container-high": "#edf2f7",
+        "background": "#ffffff",
+        "surface-container": "#f1f5f9",
+        "tertiary": "#10b981",
+        "secondary-dim": "#d97706",
+        "surface-dim": "#f8fafc",
+        "surface-bright": "#ffffff",
+        "inverse-on-surface": "#cbd5e1",
+        "on-primary-fixed": "#1e293b",
+        "primary": "#3b82f6",
+        "surface-variant": "#e2e8f0",
+        "secondary-fixed": "#fcd34d",
+        "on-primary-container": "#1e3a8a",
+        "inverse-surface": "#1e293b",
+        "outline": "#94a3b8",
+        "on-error": "#991b1b",
+        "tertiary-container": "#a7f3d0",
+        "secondary-container": "#fef3c7",
+        "on-tertiary": "#064e3b",
+        "on-secondary": "#78350f",
+        "surface": "#ffffff",
+        "on-secondary-fixed-variant": "#92400e",
+        "on-background": "#1e293b",
+        "tertiary-fixed-dim": "#6ee7b7",
+        "on-secondary-fixed": "#451a03",
+        "on-error-container": "#7f1d1d",
+        "primary-container": "#dbeafe",
+        "on-secondary-container": "#92400e",
+        "on-tertiary-fixed": "#022c22",
+        "on-tertiary-fixed-variant": "#065f46",
+        "error": "#dc2626",
+        "error-dim": "#b91c1c",
+        "primary-fixed": "#bfdbfe",
+        "secondary": "#f59e0b",
+        "surface-container-lowest": "#ffffff",
+        "on-primary-fixed-variant": "#1e40af",
+        "on-primary": "#ffffff",
+        "on-surface": "#1e293b",
+        "on-tertiary-container": "#064e3b",
+        "surface-tint": "#3b82f6"
+      },
+      fontFamily: {
+        "headline": ["Plus Jakarta Sans"],
+        "body": ["Be Vietnam Pro"],
+        "label": ["Lexend"]
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
