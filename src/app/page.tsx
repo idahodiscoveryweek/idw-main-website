@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClassroomSection from "@/components/ClassroomSection";
 
 export default function Home() {
   return (
@@ -363,9 +364,355 @@ export default function Home() {
           </div>
         </section>
 
+        <ClassroomSection />
+
+        {/* Camp Schedule */}
+        <section
+          id="schedule"
+          className="bg-linear-to-br from-blue-50 to-indigo-50 py-16 sm:py-24"
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-12 sm:mb-16">
+              <span className="font-label text-blue-500 font-bold tracking-widest uppercase text-sm mb-4 block">
+                Summer 2026
+              </span>
+              <h2 className="font-headline text-2xl sm:text-4xl md:text-5xl font-black text-gray-800 tracking-tight mb-4">
+                Camp Schedule
+              </h2>
+              <p className="text-gray-600 font-medium text-sm sm:text-lg max-w-2xl mx-auto">
+                Each week offers the same great programs. Pick the week that
+                works best for your family. All camps run Monday through Friday.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+              {/* Week 1 */}
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-center mb-6">
+                  <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                    Week 1
+                  </span>
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-800">
+                    May 25 – May 29
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-xl p-3 sm:p-4 border border-blue-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-blue-500">
+                        bolt
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Electronics & Circuitry
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/eVq5kFdquca3e5Ect52Nq01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/electronics"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-blue-500 text-xs font-label font-bold py-2 rounded-lg border border-blue-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-amber-50 rounded-xl p-3 sm:p-4 border border-amber-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-amber-500">
+                        draw
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Drawing From Life
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/aFa3cx3PU0rl7Hg64H2Nq03"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/art"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-amber-500 text-xs font-label font-bold py-2 rounded-lg border border-amber-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-emerald-50 rounded-xl p-3 sm:p-4 border border-emerald-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-emerald-500">
+                        temple_buddhist
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Japanese Language & Culture
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          12:15 PM – 2:15 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/00w5kF3PU5LFgdMbp12Nq06"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/japanese"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-emerald-500 text-xs font-label font-bold py-2 rounded-lg border border-emerald-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Week 2 */}
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-center mb-6">
+                  <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                    Week 2
+                  </span>
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-800">
+                    June 1 – June 5
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-xl p-3 sm:p-4 border border-blue-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-blue-500">
+                        bolt
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Electronics & Circuitry
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/14AfZj726gqjaTs9gT2Nq02"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/electronics"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-blue-500 text-xs font-label font-bold py-2 rounded-lg border border-blue-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-amber-50 rounded-xl p-3 sm:p-4 border border-amber-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-amber-500">
+                        draw
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Drawing From Life
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/28E00l1HMgqjbXwct52Nq04"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/art"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-amber-500 text-xs font-label font-bold py-2 rounded-lg border border-amber-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-emerald-50 rounded-xl p-3 sm:p-4 border border-emerald-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-emerald-500">
+                        temple_buddhist
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Japanese Language & Culture
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          12:15 PM – 2:15 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/cNi6oJeuya1V5z850D2Nq07"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/japanese"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-emerald-500 text-xs font-label font-bold py-2 rounded-lg border border-emerald-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Week 3 */}
+              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <div className="text-center mb-6">
+                  <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                    Week 3
+                  </span>
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-800">
+                    June 8 – June 12
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-xl p-3 sm:p-4 border border-blue-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-blue-500">
+                        bolt
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Electronics & Circuitry
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/3cIfZjgCG8XRf9Ict52Nq00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/electronics"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-blue-500 text-xs font-label font-bold py-2 rounded-lg border border-blue-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-amber-50 rounded-xl p-3 sm:p-4 border border-amber-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-amber-500">
+                        draw
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Drawing From Life
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/8x2eVf726eibaTs2Sv2Nq05"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/art"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-amber-500 text-xs font-label font-bold py-2 rounded-lg border border-amber-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-emerald-50 rounded-xl p-3 sm:p-4 border border-emerald-100">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-emerald-500">
+                        temple_buddhist
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-800 text-sm">
+                          Japanese Language & Culture
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          12:15 PM – 2:15 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/8x23cx3PUb5Zd1A50D2Nq08"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                      >
+                        Register
+                      </a>
+                      <Link
+                        href="/programs/japanese"
+                        className="flex-1 text-center bg-white hover:bg-gray-100 text-emerald-500 text-xs font-label font-bold py-2 rounded-lg border border-emerald-200 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Newsletter / CTA */}
         <section
-          className="mx-auto px-4 sm:px-6 py-12 sm:py-24 relative"
+          className="mx-auto px-4 sm:px-6 py-12 sm:py-16 relative"
           style={{
             backgroundImage: "url(/horizontal-crumblepaper-background.jpg)",
             backgroundSize: "cover",

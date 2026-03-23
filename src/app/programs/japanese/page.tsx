@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClassroomSection from "@/components/ClassroomSection";
 
 export default function JapanesePage() {
   return (
@@ -18,13 +19,24 @@ export default function JapanesePage() {
         <div className="absolute inset-0 bg-linear-to-b from-black/90 via-black/75 to-black/50"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           <div>
-            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <span className="material-symbols-outlined text-white text-3xl sm:text-5xl">
-                temple_buddhist
-              </span>
-              <h1 className="font-headline text-2xl sm:text-5xl md:text-6xl font-black text-white">
-                Japanese Language & Culture
-              </h1>
+            <div className="flex items-center justify-between gap-2 sm:gap-3 mb-4 sm:mb-6">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <span className="material-symbols-outlined text-white text-3xl sm:text-5xl">
+                  temple_buddhist
+                </span>
+                <h1 className="font-headline text-2xl sm:text-5xl md:text-6xl font-black text-white">
+                  Japanese Language & Culture
+                </h1>
+              </div>
+              <a
+                href="#register"
+                className="hidden sm:flex items-center gap-2 bg-white text-emerald-600 px-6 py-3 rounded-full font-label font-bold text-sm shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl shrink-0"
+              >
+                <span className="material-symbols-outlined text-lg">
+                  how_to_reg
+                </span>
+                Register Now
+              </a>
             </div>
             <p className="text-sm sm:text-xl text-white/90 max-w-3xl">
               Immerse yourself in Japanese language and culture! Learn basic
@@ -52,6 +64,15 @@ export default function JapanesePage() {
                 $174
               </span>
             </div>
+            <a
+              href="#register"
+              className="sm:hidden mt-4 inline-flex items-center gap-2 bg-white text-emerald-600 px-5 py-2.5 rounded-full font-label font-bold text-sm shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
+            >
+              <span className="material-symbols-outlined text-lg">
+                how_to_reg
+              </span>
+              Register Now
+            </a>
           </div>
         </div>
       </section>
@@ -238,8 +259,10 @@ export default function JapanesePage() {
         </div>
       </section>
 
+      <ClassroomSection />
+
       {/* Registration Section */}
-      <section className="py-10 sm:py-20 bg-white">
+      <section id="register" className="py-10 sm:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="font-label text-red-600 font-bold tracking-widest uppercase text-sm mb-4 block">

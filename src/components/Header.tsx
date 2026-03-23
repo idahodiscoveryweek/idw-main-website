@@ -27,127 +27,120 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8">
-          {/* Programs Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setProgramsDropdownOpen(true)}
-            onMouseLeave={() => setProgramsDropdownOpen(false)}
-          >
-            <button className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl flex items-center gap-1 border border-gray-200 text-base">
-              Programs
-              <span className="material-symbols-outlined text-sm">
-                expand_more
-              </span>
-            </button>
+        <div className="flex items-center gap-4">
+          {/* Desktop Links */}
+          <div className="hidden md:flex items-center gap-4">
+            {/* Programs Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setProgramsDropdownOpen(true)}
+              onMouseLeave={() => setProgramsDropdownOpen(false)}
+            >
+              <button className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl flex items-center gap-1 border border-gray-200 text-base">
+                Programs
+                <span className="material-symbols-outlined text-sm">
+                  expand_more
+                </span>
+              </button>
 
-            {/* Dropdown Menu */}
-            {programsDropdownOpen && (
-              <div className="absolute top-full left-0 pt-1 w-56">
-                <div className="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
-                  <Link
-                    href="/programs/electronics"
-                    className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                    onClick={() => setProgramsDropdownOpen(false)}
-                  >
-                    <span className="material-symbols-outlined text-blue-500">
-                      bolt
-                    </span>
-                    <div>
-                      <div className="font-medium">Electronics & Circuitry</div>
-                      <div className="text-xs text-gray-500">
-                        Build circuits and robots
-                      </div>
-                    </div>
-                  </Link>
-                  <Link
-                    href="/programs/art"
-                    className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
-                    onClick={() => setProgramsDropdownOpen(false)}
-                  >
-                    <span className="material-symbols-outlined text-amber-500">
-                      draw
-                    </span>
-                    <div>
-                      <div className="font-medium">Drawing From Life</div>
-                      <div className="text-xs text-gray-500">
-                        Develop artistic skills
-                      </div>
-                    </div>
-                  </Link>
-                  <Link
-                    href="/programs/japanese"
-                    className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
-                    onClick={() => setProgramsDropdownOpen(false)}
-                  >
-                    <span className="material-symbols-outlined text-emerald-500">
-                      temple_buddhist
-                    </span>
-                    <div>
-                      <div className="font-medium">
-                        Japanese Language & Culture
-                      </div>
-                      <div className="text-xs text-gray-500">
-                        Learn language and traditions
-                      </div>
-                    </div>
-                  </Link>
-                  <div className="border-t border-gray-200">
+              {/* Dropdown Menu */}
+              {programsDropdownOpen && (
+                <div className="absolute top-full right-0 pt-1 w-56">
+                  <div className="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
                     <Link
-                      href="/programs"
-                      className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                      href="/programs/electronics"
+                      className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                       onClick={() => setProgramsDropdownOpen(false)}
                     >
-                      <span className="material-symbols-outlined text-gray-500">
-                        grid_view
+                      <span className="material-symbols-outlined text-blue-500">
+                        bolt
                       </span>
                       <div>
-                        <div className="font-medium">View All Programs</div>
+                        <div className="font-medium">
+                          Electronics & Circuitry
+                        </div>
                         <div className="text-xs text-gray-500">
-                          See complete overview
+                          Build circuits and robots
                         </div>
                       </div>
                     </Link>
+                    <Link
+                      href="/programs/art"
+                      className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
+                      onClick={() => setProgramsDropdownOpen(false)}
+                    >
+                      <span className="material-symbols-outlined text-amber-500">
+                        draw
+                      </span>
+                      <div>
+                        <div className="font-medium">Drawing From Life</div>
+                        <div className="text-xs text-gray-500">
+                          Develop artistic skills
+                        </div>
+                      </div>
+                    </Link>
+                    <Link
+                      href="/programs/japanese"
+                      className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                      onClick={() => setProgramsDropdownOpen(false)}
+                    >
+                      <span className="material-symbols-outlined text-emerald-500">
+                        temple_buddhist
+                      </span>
+                      <div>
+                        <div className="font-medium">
+                          Japanese Language & Culture
+                        </div>
+                        <div className="text-xs text-gray-500">
+                          Learn language and traditions
+                        </div>
+                      </div>
+                    </Link>
+                    <div className="border-t border-gray-200">
+                      <Link
+                        href="/programs"
+                        className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                        onClick={() => setProgramsDropdownOpen(false)}
+                      >
+                        <span className="material-symbols-outlined text-gray-500">
+                          grid_view
+                        </span>
+                        <div>
+                          <div className="font-medium">View All Programs</div>
+                          <div className="text-xs text-gray-500">
+                            See complete overview
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          <Link
-            className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl border border-gray-200 text-base"
-            href="/#mission"
-          >
-            About
-          </Link>
-          <Link
-            className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl border border-gray-200 text-base"
-            href="/#contact"
-          >
-            Contact
-          </Link>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <div className="hidden md:flex flex-col gap-1.5">
             <Link
-              href="/programs/electronics"
-              className="text-white font-semibold bg-[#437eb9] hover:bg-[#366898] px-5 py-1.5 rounded-lg font-label text-xs tracking-wide transition-all duration-300 hover:translate-x-1 text-center shadow-sm"
+              className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl border border-gray-200 text-base"
+              href="/#classroom"
             >
-              Discover: Electronics
+              Classroom
             </Link>
             <Link
-              href="/programs/art"
-              className="text-white font-semibold bg-[#437eb9] hover:bg-[#366898] px-5 py-1.5 rounded-lg font-label text-xs tracking-wide transition-all duration-300 hover:translate-x-1 text-center shadow-sm"
+              className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl border border-gray-200 text-base"
+              href="/#schedule"
             >
-              Discover: Drawing
+              Schedule
             </Link>
             <Link
-              href="/programs/japanese"
-              className="text-white font-semibold bg-[#437eb9] hover:bg-[#366898] px-5 py-1.5 rounded-lg font-label text-xs tracking-wide transition-all duration-300 hover:translate-x-1 text-center shadow-sm"
+              className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl border border-gray-200 text-base"
+              href="/#mission"
             >
-              Discover: Japanese
+              About
+            </Link>
+            <Link
+              className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:scale-105 bg-gray-100 hover:bg-gray-200 px-6 py-3 rounded-xl border border-gray-200 text-base"
+              href="/#contact"
+            >
+              Contact
             </Link>
           </div>
 
@@ -212,6 +205,20 @@ export default function Header() {
 
             <Link
               className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:bg-blue-50 py-3 px-4 rounded-lg"
+              href="/#classroom"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Classroom
+            </Link>
+            <Link
+              className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:bg-blue-50 py-3 px-4 rounded-lg"
+              href="/#schedule"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Schedule
+            </Link>
+            <Link
+              className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:bg-blue-50 py-3 px-4 rounded-lg"
               href="/#mission"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -219,7 +226,7 @@ export default function Header() {
             </Link>
             <Link
               className="text-[#437eb9] font-semibold hover:text-[#366898] transition-all duration-300 hover:bg-blue-50 py-3 px-4 rounded-lg"
-              href="#contact"
+              href="/#contact"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
