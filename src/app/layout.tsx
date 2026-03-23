@@ -31,9 +31,43 @@ const blockyFont = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Idaho Discovery Week | Skyward Explorer",
+  title: "Idaho Discovery Week | Summer Learning Center",
   description:
-    "Join Grant and Moema for an unforgettable week of hands-on learning, creative exploration, and high-energy discovery in the heart of Idaho.",
+    "Summer 2026 camps in Meridian, Idaho for kids — Electronics & Circuitry, Drawing From Life, and Japanese Language & Culture. Hands-on learning at The Lark House.",
+  keywords: [
+    "Idaho Discovery Week",
+    "summer camp",
+    "Meridian Idaho",
+    "kids camp",
+    "electronics camp",
+    "drawing camp",
+    "Japanese language camp",
+    "STEM camp",
+    "The Lark House",
+  ],
+  openGraph: {
+    title: "Idaho Discovery Week | Summer Learning Center",
+    description:
+      "Summer 2026 camps in Meridian, Idaho — Electronics & Circuitry, Drawing From Life, and Japanese Language & Culture. Hands-on learning at The Lark House.",
+    siteName: "Idaho Discovery Week",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Idaho Discovery Week - Summer Learning Center",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Idaho Discovery Week | Summer Learning Center",
+    description:
+      "Summer 2026 camps in Meridian, Idaho — Electronics, Drawing, and Japanese Language & Culture.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
