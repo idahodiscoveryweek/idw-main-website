@@ -6,9 +6,173 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ClassroomSection from "@/components/ClassroomSection";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Idaho Discovery Week",
+      url: "https://idahodiscoveryweek.com",
+      logo: "https://idahodiscoveryweek.com/idwnewlogo.png",
+      email: "idahodiscoveryweek@gmail.com",
+      telephone: "+12082835068",
+      description:
+        "Summer learning camps in Meridian, Idaho for kids — Electronics & Circuitry, Drawing From Life, and Japanese Language & Culture.",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1748 W Island Green Dr",
+        addressLocality: "Meridian",
+        addressRegion: "ID",
+        postalCode: "83646",
+        addressCountry: "US",
+      },
+      sameAs: ["https://github.com/idahodiscoveryweek"],
+    },
+    {
+      "@type": "Course",
+      name: "Electronics & Circuitry",
+      description:
+        "Build circuits, work with Arduino microcontrollers, and bring your ideas to life through hands-on projects.",
+      provider: {
+        "@type": "Organization",
+        name: "Idaho Discovery Week",
+      },
+      hasCourseInstance: [
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-05-25",
+          endDate: "2026-05-29",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-06-01",
+          endDate: "2026-06-05",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-06-08",
+          endDate: "2026-06-12",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Course",
+      name: "Drawing From Life",
+      description:
+        "Develop fundamental drawing skills and explore various artistic techniques in a creative environment.",
+      provider: {
+        "@type": "Organization",
+        name: "Idaho Discovery Week",
+      },
+      hasCourseInstance: [
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-05-25",
+          endDate: "2026-05-29",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-06-01",
+          endDate: "2026-06-05",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-06-08",
+          endDate: "2026-06-12",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+      ],
+    },
+    {
+      "@type": "Course",
+      name: "Japanese Language & Culture",
+      description:
+        "Learn basic phrases, writing systems, and explore Japanese traditions through interactive activities.",
+      provider: {
+        "@type": "Organization",
+        name: "Idaho Discovery Week",
+      },
+      hasCourseInstance: [
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-05-25",
+          endDate: "2026-05-29",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-06-01",
+          endDate: "2026-06-05",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+        {
+          "@type": "CourseInstance",
+          courseMode: "onsite",
+          startDate: "2026-06-08",
+          endDate: "2026-06-12",
+          location: {
+            "@type": "Place",
+            name: "The Lark House",
+            address: "1748 W Island Green Dr, Meridian, ID 83646",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background font-body text-on-background antialiased">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
       <main className="pt-14 sm:pt-20">
         {/* Hero Section */}
@@ -115,7 +279,7 @@ export default function Home() {
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
                   <img
-                    alt="Electronics and circuitry class"
+                    alt="Student building circuits with Arduino microcontroller at Idaho Discovery Week electronics camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/breadboard-wires-micro-servos-connected-600nw-2402057335.webp"
                   />
@@ -166,7 +330,7 @@ export default function Home() {
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
                   <img
-                    alt="Drawing from life art class"
+                    alt="Student sketching from life at Idaho Discovery Week drawing camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/drawingfromlife.jpg"
                   />
@@ -215,7 +379,7 @@ export default function Home() {
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
                   <img
-                    alt="Japanese language and culture class"
+                    alt="Students learning Japanese language and culture at Idaho Discovery Week"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/japaneselanguageandculture.jpg"
                   />
@@ -276,7 +440,7 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl -rotate-2 transition-transform hover:rotate-0 duration-500">
                     <img
-                      alt="Grant, Instructor"
+                      alt="Grant, Electronics & Circuitry instructor at Idaho Discovery Week"
                       className="w-full h-full object-cover"
                       src="/IDWgrantprofile.png"
                     />
@@ -298,7 +462,7 @@ export default function Home() {
                 <div className="space-y-6 pt-16">
                   <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
                     <img
-                      alt="Moema, Instructor"
+                      alt="Moema, Drawing From Life and Japanese Language instructor at Idaho Discovery Week"
                       className="w-full h-full object-cover"
                       src="/IDWmoemaprofile.png"
                     />

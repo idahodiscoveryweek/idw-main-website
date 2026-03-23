@@ -31,7 +31,11 @@ const blockyFont = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Idaho Discovery Week | Summer Learning Center",
+  metadataBase: new URL("https://idahodiscoveryweek.com"),
+  title: {
+    default: "Idaho Discovery Week | Summer Learning Center",
+    template: "%s | Idaho Discovery Week",
+  },
   description:
     "Summer 2026 camps in Meridian, Idaho for kids — Electronics & Circuitry, Drawing From Life, and Japanese Language & Culture. Hands-on learning at The Lark House.",
   keywords: [
