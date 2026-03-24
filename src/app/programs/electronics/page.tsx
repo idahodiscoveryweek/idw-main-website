@@ -287,7 +287,7 @@ export default function ElectronicsPage() {
                     <span className="material-symbols-outlined text-blue-500 text-base">
                       schedule
                     </span>
-                    10:00 AM – 11:50 AM
+                    10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-blue-500 text-base">
@@ -326,7 +326,7 @@ export default function ElectronicsPage() {
                     <span className="material-symbols-outlined text-blue-500 text-base">
                       schedule
                     </span>
-                    10:00 AM – 11:50 AM
+                    10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-blue-500 text-base">
@@ -365,7 +365,7 @@ export default function ElectronicsPage() {
                     <span className="material-symbols-outlined text-blue-500 text-base">
                       schedule
                     </span>
-                    10:00 AM – 11:50 AM
+                    10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-blue-500 text-base">

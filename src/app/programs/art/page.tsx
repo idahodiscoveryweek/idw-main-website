@@ -288,7 +288,7 @@ export default function ArtPage() {
                     <span className="material-symbols-outlined text-green-600 text-base">
                       schedule
                     </span>
-                    12:00 PM – 1:50 PM
+                    10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-green-600 text-base">
@@ -327,7 +327,7 @@ export default function ArtPage() {
                     <span className="material-symbols-outlined text-green-600 text-base">
                       schedule
                     </span>
-                    12:00 PM – 1:50 PM
+                    10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-green-600 text-base">
@@ -366,7 +366,7 @@ export default function ArtPage() {
                     <span className="material-symbols-outlined text-green-600 text-base">
                       schedule
                     </span>
-                    12:00 PM – 1:50 PM
+                    10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-green-600 text-base">

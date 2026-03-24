@@ -307,7 +307,7 @@ export default function JapanesePage() {
                     <span className="material-symbols-outlined text-red-600 text-base">
                       schedule
                     </span>
-                    2:00 PM – 4:00 PM
+                    12:15 PM – 2:15 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-red-600 text-base">
@@ -346,7 +346,7 @@ export default function JapanesePage() {
                     <span className="material-symbols-outlined text-red-600 text-base">
                       schedule
                     </span>
-                    2:00 PM – 4:00 PM
+                    12:15 PM – 2:15 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-red-600 text-base">
@@ -385,7 +385,7 @@ export default function JapanesePage() {
                     <span className="material-symbols-outlined text-red-600 text-base">
                       schedule
                     </span>
-                    2:00 PM – 4:00 PM
+                    12:15 PM – 2:15 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
                     <span className="material-symbols-outlined text-red-600 text-base">
