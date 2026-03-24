@@ -6,6 +6,7 @@ import {
   Oswald,
 } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const headlineFont = Plus_Jakarta_Sans({
   variable: "--font-headline",
@@ -96,6 +97,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background font-body text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
         {children}
+        <Analytics />
       </body>
     </html>
   );
