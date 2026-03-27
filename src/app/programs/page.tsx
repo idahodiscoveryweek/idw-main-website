@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -50,10 +51,12 @@ export default function ProgramsPage() {
               {/* Electronics Program */}
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <img
+                  <Image
                     alt="Student building circuits with Arduino microcontroller at Idaho Discovery Week electronics camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/breadboard-wires-micro-servos-connected-600nw-2402057335.webp"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Tech Track
@@ -97,10 +100,12 @@ export default function ProgramsPage() {
               {/* Art Program */}
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <img
+                  <Image
                     alt="Student sketching from life at Idaho Discovery Week drawing camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/drawingfromlife.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Art Track
@@ -144,10 +149,12 @@ export default function ProgramsPage() {
               {/* Japanese Program */}
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <img
+                  <Image
                     alt="Students learning Japanese language and culture at Idaho Discovery Week"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/japaneselanguageandculture.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-emerald-500 to-emerald-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Culture Track

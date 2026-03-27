@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -11,10 +12,13 @@ export default function Header() {
     <nav className="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-100">
       <div className="flex justify-between items-center w-full px-3 sm:px-6 py-2 sm:py-4 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2 sm:gap-6">
-          <img
+          <Image
             alt="Idaho Discovery Week Logo"
             className="w-auto h-12 sm:h-28 transition-all duration-300 hover:scale-105"
             src="/idwnewlogo.png"
+            width={112}
+            height={112}
+            priority
           />
           <div className="flex flex-col">
             <span className="text-base sm:text-4xl font-black text-[#437eb9] font-blocky tracking-tight leading-none uppercase">

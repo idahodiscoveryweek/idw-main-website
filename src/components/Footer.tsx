@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -15,10 +16,12 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-3">
-              <img
+              <Image
                 alt="Idaho Discovery Week Logo"
                 className="w-auto h-10 sm:h-12"
                 src="/idwnewlogo.png"
+                width={48}
+                height={48}
               />
               <span className="text-lg sm:text-xl font-bold text-white font-headline">
                 Idaho Discovery Week
@@ -64,27 +67,21 @@ export default function Footer() {
               href="mailto:idahodiscoveryweek@gmail.com"
               className="flex items-center gap-2 text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
             >
-              <span className="material-symbols-outlined text-base">
-                email
-              </span>
+              <span className="material-symbols-outlined text-base">email</span>
               idahodiscoveryweek@gmail.com
             </a>
             <a
               href="tel:2082835068"
               className="flex items-center gap-2 text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
             >
-              <span className="material-symbols-outlined text-base">
-                phone
-              </span>
+              <span className="material-symbols-outlined text-base">phone</span>
               (208) 283-5068
             </a>
             <a
               href="/#mission"
               className="flex items-center gap-2 text-gray-400 text-sm hover:text-blue-400 transition-colors duration-300"
             >
-              <span className="material-symbols-outlined text-base">
-                info
-              </span>
+              <span className="material-symbols-outlined text-base">info</span>
               About Us
             </a>
           </div>

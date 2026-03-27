@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -232,10 +233,12 @@ export default function ArtPage() {
                   </h3>
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
-                      <img
+                      <Image
                         src="/IDWmoemaprofile.png"
                         alt="Moema - Art Instructor"
                         className="w-full h-full rounded-full object-cover"
+                        width={64}
+                        height={64}
                       />
                     </div>
                     <div>

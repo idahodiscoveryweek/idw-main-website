@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -231,10 +232,12 @@ export default function ElectronicsPage() {
                   </h3>
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                      <img
+                      <Image
                         src="/IDWgrantprofile.png"
                         alt="Grant - Electronics Instructor"
                         className="w-full h-full rounded-full object-cover"
+                        width={64}
+                        height={64}
                       />
                     </div>
                     <div>

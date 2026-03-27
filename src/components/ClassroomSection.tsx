@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const larkHouseImages = [
   "/larkhousefrontphoto.webp",
@@ -35,13 +36,15 @@ export default function ClassroomSection() {
           {/* Rotating Image */}
           <div className="rounded-2xl overflow-hidden shadow-2xl relative aspect-4/3 group">
             {larkHouseImages.map((src, index) => (
-              <img
+              <Image
                 key={src}
                 alt="The Lark House gathering center"
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
                   index === currentImageIndex ? "opacity-100" : "opacity-0"
                 }`}
                 src={src}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             ))}
             <button
@@ -84,10 +87,10 @@ export default function ClassroomSection() {
             </h2>
             <div className="space-y-6 text-gray-600 font-medium text-sm sm:text-lg leading-relaxed">
               <p className="transition-all duration-300 hover:text-gray-800">
-                We're proud to partner with The Lark House, a vibrant
-                community gathering center in Meridian completed in 2025.
-                All Idaho Discovery Week classes are held on the second
-                floor of this beautiful space.
+                We're proud to partner with The Lark House, a vibrant community
+                gathering center in Meridian completed in 2025. All Idaho
+                Discovery Week classes are held on the second floor of this
+                beautiful space.
               </p>
             </div>
 

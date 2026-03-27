@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -232,10 +233,12 @@ export default function JapanesePage() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                        <img
+                        <Image
                           src="/IDWgrantprofile.png"
                           alt="Grant - Japanese Instructor"
                           className="w-full h-full rounded-full object-cover"
+                          width={64}
+                          height={64}
                         />
                       </div>
                       <div>
@@ -250,10 +253,12 @@ export default function JapanesePage() {
                     </div>
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
-                        <img
+                        <Image
                           src="/IDWmoemaprofile.png"
                           alt="Moema - Japanese Instructor"
                           className="w-full h-full rounded-full object-cover"
+                          width={64}
+                          height={64}
                         />
                       </div>
                       <div>

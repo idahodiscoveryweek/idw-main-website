@@ -4,7 +4,9 @@ import {
   Be_Vietnam_Pro,
   Lexend,
   Oswald,
+  Indie_Flower,
 } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -30,6 +32,12 @@ const blockyFont = Oswald({
   variable: "--font-blocky",
   subsets: ["latin"],
   weight: ["600", "700"],
+});
+
+const handwrittenFont = Indie_Flower({
+  variable: "--font-handwritten",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -84,18 +92,23 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${headlineFont.variable} ${bodyFont.variable} ${labelFont.variable} ${blockyFont.variable} h-full antialiased`}
+      className={`${headlineFont.variable} ${bodyFont.variable} ${labelFont.variable} ${blockyFont.variable} ${handwrittenFont.variable} h-full antialiased`}
     >
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
-        />
+        <link rel="preload" as="image" href="/cloud_background.jpg" />
       </head>
+      <Script
+        id="load-material-symbols"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap';
+            document.head.appendChild(link);
+          `,
+        }}
+      />
       <body className="min-h-full flex flex-col bg-background font-body text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
         {children}
         <Analytics />

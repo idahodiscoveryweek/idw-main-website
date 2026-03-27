@@ -278,10 +278,12 @@ export default function Home() {
               {/* Track 1: Electronics */}
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <img
+                  <Image
                     alt="Student building circuits with Arduino microcontroller at Idaho Discovery Week electronics camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/breadboard-wires-micro-servos-connected-600nw-2402057335.webp"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Tech Track
@@ -329,10 +331,12 @@ export default function Home() {
               {/* Track 2: Art */}
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <img
+                  <Image
                     alt="Student sketching from life at Idaho Discovery Week drawing camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/drawingfromlife.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Arts Track
@@ -378,10 +382,12 @@ export default function Home() {
               {/* Track 3: Japanese */}
               <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
                 <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <img
+                  <Image
                     alt="Students learning Japanese language and culture at Idaho Discovery Week"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/japaneselanguageandculture.jpg"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-emerald-500 to-emerald-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Global Track
@@ -439,10 +445,12 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-3 sm:gap-6">
                 <div className="space-y-6">
                   <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl -rotate-2 transition-transform hover:rotate-0 duration-500">
-                    <img
+                    <Image
                       alt="Grant, Electronics & Circuitry instructor at Idaho Discovery Week"
                       className="w-full h-full object-cover"
                       src="/IDWgrantprofile.png"
+                      fill
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                   <div className="bg-blue-500 text-white p-3 sm:p-6 rounded-2xl shadow-lg">
@@ -461,10 +469,12 @@ export default function Home() {
                 </div>
                 <div className="space-y-6 pt-16">
                   <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
-                    <img
+                    <Image
                       alt="Moema, Drawing From Life and Japanese Language instructor at Idaho Discovery Week"
                       className="w-full h-full object-cover"
                       src="/IDWmoemaprofile.png"
+                      fill
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                     />
                   </div>
                   <div className="bg-emerald-500 text-white p-3 sm:p-6 rounded-2xl shadow-lg">
@@ -899,7 +909,7 @@ export default function Home() {
               <h2
                 className="text-2xl sm:text-5xl md:text-7xl font-normal text-white mb-4 sm:mb-8 relative z-10"
                 style={{
-                  fontFamily: "'Indie Flower', cursive",
+                  fontFamily: "var(--font-handwritten), cursive",
                   WebkitTextStroke: "2px rgba(255, 255, 255, 0.3)",
                   textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
                 }}
@@ -909,7 +919,7 @@ export default function Home() {
               <p
                 className="text-white/90 max-w-xl mx-auto mb-6 sm:mb-12 text-base sm:text-2xl relative z-10"
                 style={{
-                  fontFamily: "'Indie Flower', cursive",
+                  fontFamily: "var(--font-handwritten), cursive",
                   textShadow: "3px 3px 6px rgba(0, 0, 0, 0.5)",
                 }}
               >
