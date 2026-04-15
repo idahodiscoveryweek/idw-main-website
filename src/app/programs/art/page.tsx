@@ -275,7 +275,7 @@ export default function ArtPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {/* Week 1 */}
               <div className="bg-green-100 rounded-2xl p-6 shadow-lg flex flex-col text-center border-2 border-transparent hover:border-green-400 transition-all duration-300">
                 <div className="mb-4">
@@ -345,45 +345,6 @@ export default function ArtPage() {
                   </p>
                   <a
                     href="https://book.stripe.com/28E00l1HMgqjbXwct52Nq04"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-linear-to-r from-green-600 to-green-500 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
-                  >
-                    Register & Pay
-                  </a>
-                </div>
-              </div>
-
-              {/* Week 3 */}
-              <div className="bg-green-100 rounded-2xl p-6 shadow-lg flex flex-col text-center border-2 border-transparent hover:border-green-400 transition-all duration-300">
-                <div className="mb-4">
-                  <span className="inline-block bg-green-600 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
-                    Week 3
-                  </span>
-                  <h3 className="font-headline text-xl font-bold text-gray-800">
-                    June 8 – June 12
-                  </h3>
-                </div>
-                <div className="space-y-2 text-sm text-gray-600 mb-6">
-                  <p className="flex items-center justify-center gap-2">
-                    <span className="material-symbols-outlined text-green-600 text-base">
-                      schedule
-                    </span>
-                    10:00 AM – 12:00 PM
-                  </p>
-                  <p className="flex items-center justify-center gap-2">
-                    <span className="material-symbols-outlined text-green-600 text-base">
-                      group
-                    </span>
-                    Limited Spots Available
-                  </p>
-                </div>
-                <div className="mt-auto">
-                  <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
-                    $174
-                  </p>
-                  <a
-                    href="https://book.stripe.com/8x2eVf726eibaTs2Sv2Nq05"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-green-600 to-green-500 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
