@@ -326,7 +326,7 @@ export default function JapanesePage() {
                     $174
                   </p>
                   <a
-                    href="https://book.stripe.com/00w5kF3PU5LFgdMbp12Nq06"
+                    href="https://book.stripe.com/4gM28t9ae7TN8LkgJl2Nq0f"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-red-600 to-red-500 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
@@ -365,7 +365,7 @@ export default function JapanesePage() {
                     $174
                   </p>
                   <a
-                    href="https://book.stripe.com/cNi6oJeuya1V5z850D2Nq07"
+                    href="https://book.stripe.com/28E7sN0DI2ztaTs3Wz2Nq0g"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-red-600 to-red-500 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"

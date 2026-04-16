@@ -559,7 +559,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Week 1 */}
               <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                 <div className="text-center mb-6">
@@ -587,7 +587,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/eVq5kFdquca3e5Ect52Nq01"
+                        href="https://book.stripe.com/eVq00lfyC0rlgdM8cP2Nq09"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -618,7 +618,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/aFa3cx3PU0rl7Hg64H2Nq03"
+                        href="https://book.stripe.com/4gM8wR86a3Dx1iS9gT2Nq0c"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -649,7 +649,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/00w5kF3PU5LFgdMbp12Nq06"
+                        href="https://book.stripe.com/4gM28t9ae7TN8LkgJl2Nq0f"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -694,7 +694,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/14AfZj726gqjaTs9gT2Nq02"
+                        href="https://book.stripe.com/28EcN73PUfmf7Hg8cP2Nq0a"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -725,7 +725,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/28E00l1HMgqjbXwct52Nq04"
+                        href="https://book.stripe.com/4gM5kF2LQ7TN6Dc64H2Nq0d"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -756,114 +756,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/cNi6oJeuya1V5z850D2Nq07"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
-                      >
-                        Register
-                      </a>
-                      <Link
-                        href="/programs/japanese"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-emerald-500 text-xs font-label font-bold py-2 rounded-lg border border-emerald-200 transition-colors duration-300"
-                      >
-                        Info
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Week 3 */}
-              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                <div className="text-center mb-6">
-                  <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
-                    Week 3
-                  </span>
-                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-800">
-                    June 8 – June 12
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  <div className="bg-blue-50 rounded-xl p-3 sm:p-4 border border-blue-100">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-blue-500">
-                        bolt
-                      </span>
-                      <div>
-                        <p className="font-bold text-gray-800 text-sm">
-                          Electronics & Circuitry
-                        </p>
-                        <p className="text-gray-500 text-xs font-label">
-                          10:00 AM – 12:00 PM
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <a
-                        href="https://book.stripe.com/3cIfZjgCG8XRf9Ict52Nq00"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
-                      >
-                        Register
-                      </a>
-                      <Link
-                        href="/programs/electronics"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-blue-500 text-xs font-label font-bold py-2 rounded-lg border border-blue-200 transition-colors duration-300"
-                      >
-                        Info
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="bg-amber-50 rounded-xl p-3 sm:p-4 border border-amber-100">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-amber-500">
-                        draw
-                      </span>
-                      <div>
-                        <p className="font-bold text-gray-800 text-sm">
-                          Drawing From Life
-                        </p>
-                        <p className="text-gray-500 text-xs font-label">
-                          10:00 AM – 12:00 PM
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <a
-                        href="https://book.stripe.com/8x2eVf726eibaTs2Sv2Nq05"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
-                      >
-                        Register
-                      </a>
-                      <Link
-                        href="/programs/art"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-amber-500 text-xs font-label font-bold py-2 rounded-lg border border-amber-200 transition-colors duration-300"
-                      >
-                        Info
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="bg-emerald-50 rounded-xl p-3 sm:p-4 border border-emerald-100">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-emerald-500">
-                        temple_buddhist
-                      </span>
-                      <div>
-                        <p className="font-bold text-gray-800 text-sm">
-                          Japanese Language & Culture
-                        </p>
-                        <p className="text-gray-500 text-xs font-label">
-                          12:15 PM – 2:15 PM
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <a
-                        href="https://book.stripe.com/8x23cx3PUb5Zd1A50D2Nq08"
+                        href="https://book.stripe.com/28E7sN0DI2ztaTs3Wz2Nq0g"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"

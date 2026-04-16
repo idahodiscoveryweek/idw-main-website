@@ -305,7 +305,7 @@ export default function ArtPage() {
                     $174
                   </p>
                   <a
-                    href="https://book.stripe.com/aFa3cx3PU0rl7Hg64H2Nq03"
+                    href="https://book.stripe.com/4gM8wR86a3Dx1iS9gT2Nq0c"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-green-600 to-green-500 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
@@ -344,7 +344,7 @@ export default function ArtPage() {
                     $174
                   </p>
                   <a
-                    href="https://book.stripe.com/28E00l1HMgqjbXwct52Nq04"
+                    href="https://book.stripe.com/4gM5kF2LQ7TN6Dc64H2Nq0d"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-green-600 to-green-500 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"

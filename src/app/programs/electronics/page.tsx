@@ -304,7 +304,7 @@ export default function ElectronicsPage() {
                     $189
                   </p>
                   <a
-                    href="https://book.stripe.com/eVq5kFdquca3e5Ect52Nq01"
+                    href="https://book.stripe.com/eVq00lfyC0rlgdM8cP2Nq09"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-blue-500 to-blue-400 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
@@ -343,7 +343,7 @@ export default function ElectronicsPage() {
                     $189
                   </p>
                   <a
-                    href="https://book.stripe.com/14AfZj726gqjaTs9gT2Nq02"
+                    href="https://book.stripe.com/28EcN73PUfmf7Hg8cP2Nq0a"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-blue-500 to-blue-400 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
