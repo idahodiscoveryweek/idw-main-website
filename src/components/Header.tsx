@@ -83,23 +83,6 @@ export default function Header() {
                         </div>
                       </div>
                     </Link>
-                    <Link
-                      href="/programs/japanese"
-                      className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
-                      onClick={() => setProgramsDropdownOpen(false)}
-                    >
-                      <span className="material-symbols-outlined text-emerald-500">
-                        temple_buddhist
-                      </span>
-                      <div>
-                        <div className="font-medium">
-                          Japanese Language & Culture
-                        </div>
-                        <div className="text-xs text-gray-500">
-                          Learn language and traditions
-                        </div>
-                      </div>
-                    </Link>
                     <div className="border-t border-gray-200">
                       <Link
                         href="/programs"
@@ -193,16 +176,6 @@ export default function Header() {
                     draw
                   </span>
                   <span className="text-sm">Drawing From Life</span>
-                </Link>
-                <Link
-                  className="flex items-center gap-3 text-gray-600 hover:text-emerald-600 transition-colors py-2 px-3 rounded-lg"
-                  href="/programs/japanese"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span className="material-symbols-outlined text-emerald-500 text-sm">
-                    temple_buddhist
-                  </span>
-                  <span className="text-sm">Japanese Language & Culture</span>
                 </Link>
               </div>
             </div>

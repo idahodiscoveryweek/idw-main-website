@@ -50,12 +50,6 @@ export default function Footer() {
             >
               Drawing From Life
             </Link>
-            <Link
-              href="/programs/japanese"
-              className="text-gray-400 text-sm hover:text-red-400 transition-colors duration-300"
-            >
-              Japanese Language & Culture
-            </Link>
           </div>
 
           {/* Contact */}

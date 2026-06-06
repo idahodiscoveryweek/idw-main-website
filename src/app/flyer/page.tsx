@@ -63,7 +63,7 @@ export default function FlyerPage() {
               <div className="rounded-xl overflow-hidden mb-3 aspect-4/3">
                 <img
                   alt="Electronics camp"
-                  src="/breadboard-wires-micro-servos-connected-600nw-2402057335.webp"
+                  src="/new_electronics_photo.png"
                   className="w-full h-full object-cover"
                 />
               </div>

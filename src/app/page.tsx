@@ -17,7 +17,7 @@ const jsonLd = {
       email: "idahodiscoveryweek@gmail.com",
       telephone: "+12082835068",
       description:
-        "Summer learning camps in Meridian, Idaho for kids — Electronics & Circuitry, Drawing From Life, and Japanese Language & Culture.",
+        "Summer learning camps in Meridian, Idaho for kids — Electronics & Circuitry and Drawing From Life.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "1748 W Island Green Dr",
@@ -78,51 +78,6 @@ const jsonLd = {
       name: "Drawing From Life",
       description:
         "Develop fundamental drawing skills and explore various artistic techniques in a creative environment.",
-      provider: {
-        "@type": "Organization",
-        name: "Idaho Discovery Week",
-      },
-      hasCourseInstance: [
-        {
-          "@type": "CourseInstance",
-          courseMode: "onsite",
-          startDate: "2026-05-25",
-          endDate: "2026-05-29",
-          location: {
-            "@type": "Place",
-            name: "The Lark House",
-            address: "1748 W Island Green Dr, Meridian, ID 83646",
-          },
-        },
-        {
-          "@type": "CourseInstance",
-          courseMode: "onsite",
-          startDate: "2026-06-01",
-          endDate: "2026-06-05",
-          location: {
-            "@type": "Place",
-            name: "The Lark House",
-            address: "1748 W Island Green Dr, Meridian, ID 83646",
-          },
-        },
-        {
-          "@type": "CourseInstance",
-          courseMode: "onsite",
-          startDate: "2026-06-08",
-          endDate: "2026-06-12",
-          location: {
-            "@type": "Place",
-            name: "The Lark House",
-            address: "1748 W Island Green Dr, Meridian, ID 83646",
-          },
-        },
-      ],
-    },
-    {
-      "@type": "Course",
-      name: "Japanese Language & Culture",
-      description:
-        "Learn basic phrases, writing systems, and explore Japanese traditions through interactive activities.",
       provider: {
         "@type": "Organization",
         name: "Idaho Discovery Week",
@@ -231,15 +186,6 @@ export default function Home() {
                 </span>
                 <span>Discover: Drawing</span>
               </Link>
-              <Link
-                href="/programs/japanese"
-                className="group flex items-center gap-2 sm:gap-3 bg-white text-red-400 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
-              >
-                <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
-                  temple_buddhist
-                </span>
-                <span>Discover: Japanese</span>
-              </Link>
             </div>
           </div>
         </section>
@@ -274,16 +220,16 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
               {/* Track 1: Electronics */}
-              <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
-                <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
+              <div className="group bg-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100 max-w-md md:max-w-none mx-auto w-full">
+                <div className="aspect-4/3 rounded-xl overflow-hidden mb-5 relative">
                   <Image
                     alt="Student building circuits with Arduino microcontroller at Idaho Discovery Week electronics camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="/breadboard-wires-micro-servos-connected-600nw-2402057335.webp"
+                    src="/new_electronics_photo.png"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Tech Track
@@ -317,7 +263,7 @@ export default function Home() {
                   <div className="mt-4">
                     <Link
                       href="/programs/electronics"
-                      className="mt-0 group flex items-center justify-center gap-2 sm:gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
+                      className="mt-0 group flex items-center justify-center gap-2 sm:gap-3 bg-linear-to-r from-blue-500 to-blue-400 text-white px-5 py-3 sm:px-7 sm:py-3.5 rounded-full font-label font-bold text-sm sm:text-base shadow-xl shadow-blue-500/25 hover:translate-y-[-2px] transition-all duration-300 hover:shadow-2xl"
                     >
                       <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                         bolt
@@ -329,14 +275,14 @@ export default function Home() {
               </div>
 
               {/* Track 2: Art */}
-              <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
-                <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
+              <div className="group bg-white p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100 max-w-md md:max-w-none mx-auto w-full">
+                <div className="aspect-4/3 rounded-xl overflow-hidden mb-5 relative">
                   <Image
                     alt="Student sketching from life at Idaho Discovery Week drawing camp"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     src="/drawingfromlife.jpg"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute top-4 left-4 bg-linear-to-r from-amber-500 to-amber-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
                     Arts Track
@@ -369,66 +315,13 @@ export default function Home() {
                   </div>
                   <Link
                     href="/programs/art"
-                    className="mt-6 group flex items-center justify-center gap-2 sm:gap-3 bg-amber-100 text-amber-700 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:bg-amber-200 transition-all duration-300 hover:shadow-lg"
+                    className="mt-6 group flex items-center justify-center gap-2 sm:gap-3 bg-amber-100 text-amber-700 px-5 py-3 sm:px-7 sm:py-3.5 rounded-full font-label font-bold text-sm sm:text-base hover:bg-amber-200 transition-all duration-300 hover:shadow-lg"
                   >
                     <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                       draw
                     </span>
                     <span>Discover: Drawing From Life</span>
                   </Link>
-                </div>
-              </div>
-
-              {/* Track 3: Japanese */}
-              <div className="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-3 border border-gray-100">
-                <div className="aspect-5/6 rounded-xl overflow-hidden mb-6 relative">
-                  <Image
-                    alt="Students learning Japanese language and culture at Idaho Discovery Week"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    src="/japaneselanguageandculture.jpg"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  <div className="absolute top-4 left-4 bg-linear-to-r from-emerald-500 to-emerald-600 text-white px-4 py-2 rounded-full text-xs font-bold font-label uppercase tracking-widest shadow-lg">
-                    Global Track
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <div className="grow">
-                    <h3 className="font-headline text-2xl font-bold text-gray-800 mb-4 group-hover:text-emerald-500 transition-colors duration-300">
-                      Japanese Language & Culture
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed mb-6 font-medium">
-                      A journey through Japan! You'll learn cultural nuances,
-                      basic words, and phrases to help you get around Japan.
-                      Experience traditional foods and snacks, then participate
-                      in a formal Japanese meal while mastering proper eating
-                      customs.
-                    </p>
-                    <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm font-label text-red-400">
-                      <span className="flex items-center gap-2">
-                        <span className="material-symbols-outlined">
-                          restaurant
-                        </span>
-                        Traditional Food & Games
-                      </span>
-                      <span className="flex items-center gap-2">
-                        <span className="material-symbols-outlined">group</span>
-                        Ages 8+
-                      </span>
-                    </div>
-                  </div>
-                  <div className="mt-4">
-                    <Link
-                      href="/programs/japanese"
-                      className="group flex items-center justify-center gap-2 sm:gap-3 bg-white text-red-400 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base border-2 border-red-200 hover:border-red-300 transition-all duration-300 hover:shadow-lg"
-                    >
-                      <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
-                        temple_buddhist
-                      </span>
-                      <span>Discover: Japanese Language & Culture</span>
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>
@@ -470,7 +363,7 @@ export default function Home() {
                 <div className="space-y-6 pt-16">
                   <div className="rounded-2xl overflow-hidden aspect-3/4 shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
                     <Image
-                      alt="Moema, Drawing From Life and Japanese Language instructor at Idaho Discovery Week"
+                      alt="Moema, Drawing From Life instructor at Idaho Discovery Week"
                       className="w-full h-full object-cover"
                       src="/IDWmoemaprofile.png"
                       fill
@@ -482,12 +375,10 @@ export default function Home() {
                       Meet Moema
                     </span>
                     <p className="text-sm font-medium mb-3">
-                      Artist & Japanese Language Instructor
+                      Artist & Instructor
                     </p>
                     <div className="bg-white/20 rounded-lg px-3 py-2">
-                      <p className="text-xs font-semibold">
-                        Major: Animation & Japanese
-                      </p>
+                      <p className="text-xs font-semibold">Major: Animation</p>
                     </div>
                   </div>
                 </div>
@@ -518,10 +409,10 @@ export default function Home() {
                 </p>
                 <p className="transition-all duration-300 hover:text-gray-800">
                   By attending Idaho Discovery Week, your kids aren't just
-                  learning electronics, art, or Japanese; they're supporting
-                  local students. We are teaching these summer classes to save
-                  for college while striving to build the most creative,
-                  high-energy environment for kids in our community.
+                  learning electronics or art; they're supporting local
+                  students. We are teaching these summer classes to save for
+                  college while striving to build the most creative, high-energy
+                  environment for kids in our community.
                 </p>
               </div>
               <div className="mt-6 flex items-center gap-6">
@@ -559,25 +450,28 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
               {/* Week 1 */}
-              <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="bg-gray-100 rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200 opacity-75 grayscale">
                 <div className="text-center mb-6">
-                  <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                  <span className="inline-block bg-gray-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
                     Week 1
                   </span>
-                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-800">
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-700">
                     May 25 – May 29
                   </h3>
+                  <p className="text-xs font-label font-bold uppercase tracking-widest text-gray-500 mt-2">
+                    Session Complete
+                  </p>
                 </div>
                 <div className="space-y-4">
-                  <div className="bg-blue-50 rounded-xl p-3 sm:p-4 border border-blue-100">
+                  <div className="bg-gray-200 rounded-xl p-3 sm:p-4 border border-gray-300">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-blue-500">
+                      <span className="material-symbols-outlined text-gray-500">
                         bolt
                       </span>
                       <div>
-                        <p className="font-bold text-gray-800 text-sm">
+                        <p className="font-bold text-gray-700 text-sm">
                           Electronics & Circuitry
                         </p>
                         <p className="text-gray-500 text-xs font-label">
@@ -590,25 +484,25 @@ export default function Home() {
                         href="https://book.stripe.com/eVq00lfyC0rlgdM8cP2Nq09"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                        className="flex-1 text-center bg-gray-400 text-white text-xs font-label font-bold py-2 rounded-lg pointer-events-none cursor-not-allowed"
                       >
-                        Register
+                        Closed
                       </a>
                       <Link
                         href="/programs/electronics"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-blue-500 text-xs font-label font-bold py-2 rounded-lg border border-blue-200 transition-colors duration-300"
+                        className="flex-1 text-center bg-gray-50 hover:bg-gray-100 text-gray-600 text-xs font-label font-bold py-2 rounded-lg border border-gray-300 transition-colors duration-300"
                       >
                         Info
                       </Link>
                     </div>
                   </div>
-                  <div className="bg-amber-50 rounded-xl p-3 sm:p-4 border border-amber-100">
+                  <div className="bg-gray-200 rounded-xl p-3 sm:p-4 border border-gray-300">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-amber-500">
+                      <span className="material-symbols-outlined text-gray-500">
                         draw
                       </span>
                       <div>
-                        <p className="font-bold text-gray-800 text-sm">
+                        <p className="font-bold text-gray-700 text-sm">
                           Drawing From Life
                         </p>
                         <p className="text-gray-500 text-xs font-label">
@@ -621,44 +515,13 @@ export default function Home() {
                         href="https://book.stripe.com/4gM8wR86a3Dx1iS9gT2Nq0c"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
+                        className="flex-1 text-center bg-gray-400 text-white text-xs font-label font-bold py-2 rounded-lg pointer-events-none cursor-not-allowed"
                       >
-                        Register
+                        Closed
                       </a>
                       <Link
                         href="/programs/art"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-amber-500 text-xs font-label font-bold py-2 rounded-lg border border-amber-200 transition-colors duration-300"
-                      >
-                        Info
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="bg-emerald-50 rounded-xl p-3 sm:p-4 border border-emerald-100">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-emerald-500">
-                        temple_buddhist
-                      </span>
-                      <div>
-                        <p className="font-bold text-gray-800 text-sm">
-                          Japanese Language & Culture
-                        </p>
-                        <p className="text-gray-500 text-xs font-label">
-                          12:15 PM – 2:15 PM
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <a
-                        href="https://book.stripe.com/4gM28t9ae7TN8LkgJl2Nq0f"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
-                      >
-                        Register
-                      </a>
-                      <Link
-                        href="/programs/japanese"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-emerald-500 text-xs font-label font-bold py-2 rounded-lg border border-emerald-200 transition-colors duration-300"
+                        className="flex-1 text-center bg-gray-50 hover:bg-gray-100 text-gray-600 text-xs font-label font-bold py-2 rounded-lg border border-gray-300 transition-colors duration-300"
                       >
                         Info
                       </Link>
@@ -668,13 +531,92 @@ export default function Home() {
               </div>
 
               {/* Week 2 */}
+              <div className="bg-gray-100 rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200 opacity-75 grayscale">
+                <div className="text-center mb-6">
+                  <span className="inline-block bg-gray-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                    Week 2
+                  </span>
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-700">
+                    June 1 – June 5
+                  </h3>
+                  <p className="text-xs font-label font-bold uppercase tracking-widest text-gray-500 mt-2">
+                    Session Complete
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-gray-200 rounded-xl p-3 sm:p-4 border border-gray-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-gray-500">
+                        bolt
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-700 text-sm">
+                          Electronics & Circuitry
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/28EcN73PUfmf7Hg8cP2Nq0a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-gray-400 text-white text-xs font-label font-bold py-2 rounded-lg pointer-events-none cursor-not-allowed"
+                      >
+                        Closed
+                      </a>
+                      <Link
+                        href="/programs/electronics"
+                        className="flex-1 text-center bg-gray-50 hover:bg-gray-100 text-gray-600 text-xs font-label font-bold py-2 rounded-lg border border-gray-300 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="bg-gray-200 rounded-xl p-3 sm:p-4 border border-gray-300">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="material-symbols-outlined text-gray-500">
+                        draw
+                      </span>
+                      <div>
+                        <p className="font-bold text-gray-700 text-sm">
+                          Drawing From Life
+                        </p>
+                        <p className="text-gray-500 text-xs font-label">
+                          10:00 AM – 12:00 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://book.stripe.com/4gM5kF2LQ7TN6Dc64H2Nq0d"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center bg-gray-400 text-white text-xs font-label font-bold py-2 rounded-lg pointer-events-none cursor-not-allowed"
+                      >
+                        Closed
+                      </a>
+                      <Link
+                        href="/programs/art"
+                        className="flex-1 text-center bg-gray-50 hover:bg-gray-100 text-gray-600 text-xs font-label font-bold py-2 rounded-lg border border-gray-300 transition-colors duration-300"
+                      >
+                        Info
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Week 3 */}
               <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                 <div className="text-center mb-6">
                   <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
-                    Week 2
+                    Week 3
                   </span>
                   <h3 className="font-headline text-xl sm:text-2xl font-bold text-gray-800">
-                    June 1 – June 5
+                    June 22 – June 26
                   </h3>
                 </div>
                 <div className="space-y-4">
@@ -694,7 +636,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/28EcN73PUfmf7Hg8cP2Nq0a"
+                        href="https://book.stripe.com/4gM8wR86a5LFe5Ebp12Nq0j"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-blue-500 hover:bg-blue-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -725,7 +667,7 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <a
-                        href="https://book.stripe.com/4gM5kF2LQ7TN6Dc64H2Nq0d"
+                        href="https://book.stripe.com/8x29AVcmqa1V2mW8cP2Nq0k"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
@@ -735,37 +677,6 @@ export default function Home() {
                       <Link
                         href="/programs/art"
                         className="flex-1 text-center bg-white hover:bg-gray-100 text-amber-500 text-xs font-label font-bold py-2 rounded-lg border border-amber-200 transition-colors duration-300"
-                      >
-                        Info
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="bg-emerald-50 rounded-xl p-3 sm:p-4 border border-emerald-100">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="material-symbols-outlined text-emerald-500">
-                        temple_buddhist
-                      </span>
-                      <div>
-                        <p className="font-bold text-gray-800 text-sm">
-                          Japanese Language & Culture
-                        </p>
-                        <p className="text-gray-500 text-xs font-label">
-                          12:15 PM – 2:15 PM
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <a
-                        href="https://book.stripe.com/28E7sN0DI2ztaTs3Wz2Nq0g"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-label font-bold py-2 rounded-lg transition-colors duration-300"
-                      >
-                        Register
-                      </a>
-                      <Link
-                        href="/programs/japanese"
-                        className="flex-1 text-center bg-white hover:bg-gray-100 text-emerald-500 text-xs font-label font-bold py-2 rounded-lg border border-emerald-200 transition-colors duration-300"
                       >
                         Info
                       </Link>
@@ -837,15 +748,6 @@ export default function Home() {
                     draw
                   </span>
                   <span>Discover: Drawing</span>
-                </Link>
-                <Link
-                  href="/programs/japanese"
-                  className="group flex items-center gap-2 sm:gap-3 bg-white text-red-400 px-5 py-3 sm:px-8 sm:py-4 rounded-full font-label font-bold text-sm sm:text-base hover:translate-y-[-2px] transition-all duration-300 hover:shadow-lg"
-                >
-                  <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
-                    temple_buddhist
-                  </span>
-                  <span>Discover: Japanese</span>
                 </Link>
               </div>
             </div>

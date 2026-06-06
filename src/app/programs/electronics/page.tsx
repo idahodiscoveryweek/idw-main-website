@@ -13,9 +13,7 @@ export const metadata: Metadata = {
     title: "Electronics & Circuitry Camp | Idaho Discovery Week",
     description:
       "Build circuits, code with Arduino microcontrollers, and take home your own electronics kit. Summer 2026 camp in Meridian, Idaho.",
-    images: [
-      { url: "/breadboard-wires-micro-servos-connected-600nw-2402057335.webp" },
-    ],
+    images: [{ url: "/new_electronics_photo.png" }],
   },
 };
 
@@ -274,54 +272,99 @@ export default function ElectronicsPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
               {/* Week 1 */}
-              <div className="bg-blue-100 rounded-2xl p-6 shadow-lg flex flex-col text-center border-2 border-transparent hover:border-blue-400 transition-all duration-300">
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-lg flex flex-col text-center border-2 border-gray-200 opacity-75 grayscale">
                 <div className="mb-4">
-                  <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                  <span className="inline-block bg-gray-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
                     Week 1
                   </span>
-                  <h3 className="font-headline text-xl font-bold text-gray-800">
+                  <h3 className="font-headline text-xl font-bold text-gray-700">
                     May 25 – May 29
                   </h3>
+                  <p className="text-xs font-label font-bold uppercase tracking-widest text-gray-500 mt-2">
+                    Session Complete
+                  </p>
                 </div>
                 <div className="space-y-2 text-sm text-gray-600 mb-6">
                   <p className="flex items-center justify-center gap-2">
-                    <span className="material-symbols-outlined text-blue-500 text-base">
+                    <span className="material-symbols-outlined text-gray-500 text-base">
                       schedule
                     </span>
                     10:00 AM – 12:00 PM
                   </p>
                   <p className="flex items-center justify-center gap-2">
-                    <span className="material-symbols-outlined text-blue-500 text-base">
+                    <span className="material-symbols-outlined text-gray-500 text-base">
                       group
                     </span>
-                    Limited Spots Available
+                    Session Complete
                   </p>
                 </div>
                 <div className="mt-auto">
-                  <p className="text-2xl font-bold font-headline text-gray-800 mb-4">
+                  <p className="text-2xl font-bold font-headline text-gray-700 mb-4">
                     $189
                   </p>
                   <a
                     href="https://book.stripe.com/eVq00lfyC0rlgdM8cP2Nq09"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-linear-to-r from-blue-500 to-blue-400 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
+                    className="block w-full bg-gray-400 text-white py-3 rounded-full font-label font-bold pointer-events-none cursor-not-allowed"
                   >
-                    Register & Pay
+                    Closed
                   </a>
                 </div>
               </div>
 
               {/* Week 2 */}
+              <div className="bg-gray-100 rounded-2xl p-6 shadow-lg flex flex-col text-center border-2 border-gray-200 opacity-75 grayscale">
+                <div className="mb-4">
+                  <span className="inline-block bg-gray-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+                    Week 2
+                  </span>
+                  <h3 className="font-headline text-xl font-bold text-gray-700">
+                    June 1 – June 5
+                  </h3>
+                  <p className="text-xs font-label font-bold uppercase tracking-widest text-gray-500 mt-2">
+                    Session Complete
+                  </p>
+                </div>
+                <div className="space-y-2 text-sm text-gray-600 mb-6">
+                  <p className="flex items-center justify-center gap-2">
+                    <span className="material-symbols-outlined text-gray-500 text-base">
+                      schedule
+                    </span>
+                    10:00 AM – 12:00 PM
+                  </p>
+                  <p className="flex items-center justify-center gap-2">
+                    <span className="material-symbols-outlined text-gray-500 text-base">
+                      group
+                    </span>
+                    Session Complete
+                  </p>
+                </div>
+                <div className="mt-auto">
+                  <p className="text-2xl font-bold font-headline text-gray-700 mb-4">
+                    $189
+                  </p>
+                  <a
+                    href="https://book.stripe.com/28EcN73PUfmf7Hg8cP2Nq0a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-gray-400 text-white py-3 rounded-full font-label font-bold pointer-events-none cursor-not-allowed"
+                  >
+                    Closed
+                  </a>
+                </div>
+              </div>
+
+              {/* Week 3 */}
               <div className="bg-blue-100 rounded-2xl p-6 shadow-lg flex flex-col text-center border-2 border-transparent hover:border-blue-400 transition-all duration-300">
                 <div className="mb-4">
                   <span className="inline-block bg-blue-500 text-white text-xs font-bold font-label uppercase tracking-widest px-3 py-1 rounded-full mb-3">
-                    Week 2
+                    Week 3
                   </span>
                   <h3 className="font-headline text-xl font-bold text-gray-800">
-                    June 1 – June 5
+                    June 22 – June 26
                   </h3>
                 </div>
                 <div className="space-y-2 text-sm text-gray-600 mb-6">
@@ -343,7 +386,7 @@ export default function ElectronicsPage() {
                     $189
                   </p>
                   <a
-                    href="https://book.stripe.com/28EcN73PUfmf7Hg8cP2Nq0a"
+                    href="https://book.stripe.com/4gM8wR86a5LFe5Ebp12Nq0j"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full bg-linear-to-r from-blue-500 to-blue-400 text-white py-3 rounded-full font-label font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300 hover:shadow-xl"
